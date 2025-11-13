@@ -312,8 +312,8 @@ header nav a:hover {
 }
 
 .contact-container p {
-    max-width: 500px;
-    margin: 0 auto 30px auto;
+    max-width: 900px;
+    margin: auto auto 30px auto;
 }
 
 .contact-links {
