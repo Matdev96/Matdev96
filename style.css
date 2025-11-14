@@ -171,6 +171,40 @@ header nav a:hover {
     gap: 30px;
 }
 
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: 1px solid var(--verde-militar);
+    color: var(--verde-militar);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: var(--verde-militar);
+    color: var(--off-white);
+}
+
+.filter-btn.active {
+    background-color: var(--verde-militar);
+    color: var(--off-white);
+}
+
+/* Classe para esconder os cards que não correspondem ao filtro */
+.project-card.hidden {
+    display: none;
+}
+
 /* --- MUDANÇA IMPORTANTE AQUI --- */
 .project-card {
     background-color: var(--off-white);
