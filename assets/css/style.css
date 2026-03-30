@@ -100,6 +100,30 @@ header nav ul {
     color: var(--off-white);
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    margin-left: 15px;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--quase-preto);
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 header nav a {
     font-weight: 500;
     transition: color 0.3s ease;
@@ -217,6 +241,19 @@ header nav a:hover {
 .btn-secondary:hover {
     background-color: var(--verde-militar);
     color: var(--off-white);
+}
+
+.btn-cv {
+    border: 2px solid var(--quase-preto);
+    color: var(--quase-preto);
+    margin-left: 15px;
+}
+.btn-cv:hover {
+    background-color: var(--quase-preto);
+    color: var(--off-white);
+}
+.btn-cv i {
+    margin-right: 6px;
 }
 
 /* 4. SEÇÃO DE SKILLS */
@@ -490,22 +527,50 @@ footer p {
     h2 {
         font-size: 2rem;
     }
+
+    /* Header */
     header .header-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .about-container {
-        flex-direction: column;
-    }
-    .contact-links {
-        flex-direction: column;
-        align-items: center;
+        position: relative;
     }
 
+    .hamburger {
+        display: flex;
+    }
+
+    #main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--off-white);
+        border-top: 1px solid #e0e0e0;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        z-index: 999;
+    }
+
+    #main-nav.open {
+        display: flex;
+    }
+
+    #main-nav ul {
+        flex-direction: column;
+        gap: 18px;
+        width: 100%;
+    }
+
+    .lang-toggle {
+        margin-left: 0;
+    }
+
+    /* Hero */
     .home-container {
         flex-direction: column;
         text-align: center;
-        gap: 50px;
+        gap: 40px;
         padding-top: 50px;
     }
 
@@ -515,5 +580,32 @@ footer p {
 
     .hero-text {
         max-width: 100%;
+    }
+
+    .hero-availability {
+        justify-content: center;
+    }
+
+    .cta-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .btn-secondary,
+    .btn-cv {
+        margin-left: 0;
+    }
+
+    /* About */
+    .about-container {
+        flex-direction: column;
+    }
+
+    /* Contact */
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
     }
 }

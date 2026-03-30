@@ -43,7 +43,7 @@
     <header>
         <div class="container header-container">
             <a href="#" class="logo">&lt;MDS/&gt;</a>
-            <nav>
+            <nav id="main-nav">
                 <ul>
                     <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
                     <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
@@ -52,6 +52,9 @@
                 </ul>
                 <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
             </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
 
@@ -68,11 +71,12 @@
                     <div class="cta-buttons">
                         <a href="#projects" class="btn btn-primary" data-i18n="hero.cta.primary">Veja meus projetos</a>
                         <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta.secondary">Entre em contato</a>
+                        <a href="assets/cv-matheus-dias.pdf" download class="btn btn-cv" data-i18n="hero.cta.cv"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
                     </div>
                 </div>
 
                 <div class="hero-image">
-                    <img src="https://id22.com.br/wp-content/uploads/2025/11/Generatedimage_1762868354594.png" alt="Ilustração abstrata 3D que representa engenharia de software">
+                    <img src="https://id22.com.br/wp-content/uploads/2025/11/Generatedimage_1762868354594.png" alt="Ilustração abstrata 3D que representa engenharia de software" loading="lazy">
                 </div>
 
             </div>
@@ -145,7 +149,7 @@
 
                     <!-- Projeto 1: ID22 -->
                     <div class="project-card" data-filter="site">
-                        <img src="https://id22.com.br/wp-content/uploads/2025/11/ID22.jpg" alt="Preview do site ID22">
+                        <img src="https://id22.com.br/wp-content/uploads/2025/11/ID22.jpg" alt="Preview do site ID22" loading="lazy">
                         <div class="card-content">
                             <h3>ID22 Marketing e Tecnologia</h3>
                             <h4 data-i18n="project.id22.subtitle">Site Institucional & Plataforma de Atendimento</h4>
@@ -161,7 +165,7 @@
 
                     <!-- Projeto 2: Casa Nova -->
                     <div class="project-card" data-filter="site">
-                        <img src="https://id22.com.br/wp-content/uploads/2025/11/Casa-Nova.jpg" alt="Preview do site Casa Nova">
+                        <img src="https://id22.com.br/wp-content/uploads/2025/11/Casa-Nova.jpg" alt="Preview do site Casa Nova" loading="lazy">
                         <div class="card-content">
                             <h3>Casa Nova Móveis Planejados</h3>
                             <h4 data-i18n="project.casanova.subtitle">Portfólio Digital Interativo</h4>
@@ -177,7 +181,7 @@
 
                     <!-- Projeto 3: Mundo Geopolítico -->
                     <div class="project-card" data-filter="site">
-                        <img src="https://id22.com.br/wp-content/uploads/2025/11/Mundo-Geopolitico.jpg" alt="Preview do site Mundo Geopolítico">
+                        <img src="https://id22.com.br/wp-content/uploads/2025/11/Mundo-Geopolitico.jpg" alt="Preview do site Mundo Geopolítico" loading="lazy">
                         <div class="card-content">
                             <h3>Mundo Geopolítico</h3>
                             <h4 data-i18n="project.mundogeo.subtitle">Plataforma de Conteúdo & Análise</h4>
@@ -193,7 +197,7 @@
 
                     <!-- Projeto 4: Blog Mundo Geopolítico -->
                     <div class="project-card" data-filter="site">
-                        <img src="assets/images/artigos.mundo.geopolitico.img.jpg" alt="Preview do Blog Mundo Geopolítico">
+                        <img src="assets/images/artigos.mundo.geopolitico.img.jpg" alt="Preview do Blog Mundo Geopolítico" loading="lazy">
                         <div class="card-content">
                             <h3>Blog Mundo Geopolítico</h3>
                             <h4 data-i18n="project.blogmundogeo.subtitle">Desenvolvimento de Blog Personalizado</h4>
@@ -209,7 +213,7 @@
 
                     <!-- Projeto 5: ClauMixx -->
                     <div class="project-card" data-filter="lp">
-                        <img src="https://id22.com.br/wp-content/uploads/2025/11/ClauMixx.jpg" alt="Preview do site ClauMixx">
+                        <img src="https://id22.com.br/wp-content/uploads/2025/11/ClauMixx.jpg" alt="Preview do site ClauMixx" loading="lazy">
                         <div class="card-content">
                             <h3>ClauMixx - Lançamento</h3>
                             <h4 data-i18n="project.claumixx.subtitle">Landing Page de Vendas Diretas</h4>
@@ -225,7 +229,7 @@
 
                     <!-- Projeto 6: Cícero Neri -->
                     <div class="project-card" data-filter="lp">
-                        <img src="assets/images/lp.cicero.neri.img.jpg" alt="Preview do site Cícero Neri">
+                        <img src="assets/images/lp.cicero.neri.img.jpg" alt="Preview do site Cícero Neri" loading="lazy">
                         <div class="card-content">
                             <h3>Cícero Neri - Consultoria de Vendas</h3>
                             <h4 data-i18n="project.ciceroneri.subtitle">Presença Digital para Consultor de Vendas</h4>
@@ -241,7 +245,7 @@
 
                     <!-- Projeto 7: Tubo Forte -->
                     <div class="project-card" data-filter="site">
-                        <img src="assets/images/site-tubo-forte-img.jpg" alt="Preview do site Tubo Forte">
+                        <img src="assets/images/site-tubo-forte-img.jpg" alt="Preview do site Tubo Forte" loading="lazy">
                         <div class="card-content">
                             <h3>Tubo Forte Plásticos</h3>
                             <h4 data-i18n="project.tuboforte.subtitle">Site Institucional & Catálogo Digital B2B</h4>
@@ -257,7 +261,7 @@
 
                     <!-- Projeto 8: Dra. Larissa Ramalho -->
                     <div class="project-card" data-filter="lp">
-                        <img src="assets/images/lp-dra-larissa-img.jpg" alt="Preview do Landing Page Dra. Larissa Ramalho">
+                        <img src="assets/images/lp-dra-larissa-img.jpg" alt="Preview do Landing Page Dra. Larissa Ramalho" loading="lazy">
                         <div class="card-content">
                             <h3>Dra. Larissa Ramalho</h3>
                             <h4 data-i18n="project.dralarissa.subtitle">Landing Page para Captação de Leads</h4>
@@ -273,7 +277,7 @@
 
                     <!-- Projeto 9: AP Soluções Humanas -->
                     <div class="project-card" data-filter="site">
-                        <img src="assets/images/site.ap.solucoes.hamanas.png" alt="Preview do site AP Soluções Humanas">
+                        <img src="assets/images/site.ap.solucoes.hamanas.png" alt="Preview do site AP Soluções Humanas" loading="lazy">
                         <div class="card-content">
                             <h3>AP Soluções Humanas</h3>
                             <h4 data-i18n="project.apsolucoes.subtitle">Site Institucional & Plataforma de Serviços</h4>
@@ -289,7 +293,7 @@
 
                     <!-- Projeto 10: Agente BNI 1ª Versão -->
                     <div class="project-card" data-filter="automation">
-                        <img src="assets/images/Agente-BNI-Atendimento.jpg" alt="Preview da automação Agente de Atendimento BNI">
+                        <img src="assets/images/Agente-BNI-Atendimento.jpg" alt="Preview da automação Agente de Atendimento BNI" loading="lazy">
                         <div class="card-content">
                             <h3>Agente de Atendimento BNI - 1ª Versão</h3>
                             <h4 data-i18n="project.bni1.subtitle">BNI Nebbiolo Indaiatuba - Automação de Atendimento via WhatsApp</h4>
@@ -303,7 +307,7 @@
 
                     <!-- Projeto 11: Agente BNI 2ª Versão -->
                     <div class="project-card" data-filter="automation">
-                        <img src="assets/images/Agente-BNI2-Atendimento.jpg" alt="Preview da automação Agente de Atendimento BNI 2ª Versão">
+                        <img src="assets/images/Agente-BNI2-Atendimento.jpg" alt="Preview da automação Agente de Atendimento BNI 2ª Versão" loading="lazy">
                         <div class="card-content">
                             <h3>Agente de Atendimento BNI - 2ª Versão</h3>
                             <h4 data-i18n="project.bni2.subtitle">BNI Nebbiolo Indaiatuba - Automação Avançada via WhatsApp</h4>
@@ -323,15 +327,12 @@
         <section id="about">
             <div class="container about-container">
                 <div class="about-image">
-                    <img src="https://id22.com.br/wp-content/uploads/2025/11/Imagem-do-WhatsApp-de-2025-09-03-as-19.14.06_8d3f4f8b.jpg" alt="Foto de Matheus Dias de Souza">
+                    <img src="https://id22.com.br/wp-content/uploads/2025/11/Imagem-do-WhatsApp-de-2025-09-03-as-19.14.06_8d3f4f8b.jpg" alt="Foto de Matheus Dias de Souza" loading="lazy">
                 </div>
                 <div class="about-text">
                     <h2 data-i18n="about.title">Olá, sou o Matheus.</h2>
-                    <p data-i18n="about.p1">Minha jornada na tecnologia começou de uma forma pouco convencional. Após concluir minha graduação em Direito, uma temporada em Londres despertou uma nova perspectiva e uma certeza: minha verdadeira vocação estava em construir e criar no universo digital.</p>
-                    <p data-i18n="about.p2">De volta ao Brasil, mergulhei de cabeça no mundo real, aplicando meus novos conhecimentos no e-commerce da minha família. Ali, fui além da teoria, criando landing pages, gerenciando o site, desenvolvendo campanhas e automações que geravam resultados concretos. Foi essa experiência prática que solidificou minha paixão: transformar ideias e sonhos em interfaces funcionais e elegantes que as pessoas realmente usam.</p>
-                    <p data-i18n="about.p3">Como engenheiro de software, sou guiado por uma filosofia de minimalismo estratégico. Valorizo soluções diretas e um código que seja não apenas limpo e performático, mas também de fácil entendimento para futuras atualizações. Para mim, um bom design é aquele que une beleza, funcionalidade e acessibilidade para todos. Sou metódico, analítico e organizado, qualidades que aplico em cada linha de código e em cada projeto que desenvolvo.</p>
-                    <p data-i18n="about.p4">Fora do universo digital, meu foco e disciplina são canalizados em outra grande paixão: a corrida de rua. Como maratonista, aprendi que os maiores desafios são vencidos com consistência, estratégia e a visão de que o impossível é apenas uma questão de tempo e dedicação.</p>
-                    <p data-i18n="about.p5">Impulsionado pela velocidade com que a tecnologia avança, meu objetivo é trabalhar com pessoas que também pensam no futuro, vivendo os dias de hoje. Porque, para mim, o impossível é apenas o próximo grande projeto esperando para ser construído.</p>
+                    <p data-i18n="about.p1">Minha jornada na tecnologia começou de forma pouco convencional. Graduado em Direito, uma temporada em Londres foi o ponto de virada: percebi que minha verdadeira vocação estava em construir no universo digital. De volta ao Brasil, coloquei em prática no e-commerce da família — criando landing pages, automações e campanhas que geravam resultados concretos.</p>
+                    <p data-i18n="about.p2">Hoje, baseado em Dublin, atuo como desenvolvedor full-stack com foco em soluções que unem desenvolvimento web e automação com IA. Sou guiado por minimalismo estratégico: código limpo, design funcional e soluções diretas. Fora do digital, sou maratonista — consistência e estratégia que também aplico em cada projeto.</p>
                 </div>
             </div>
         </section>

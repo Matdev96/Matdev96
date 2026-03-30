@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             'hero.subtitle': 'Desenvolvedor Web especializado em criar soluções digitais robustas e elegantes.',
             'hero.cta.primary': 'Veja meus projetos',
             'hero.cta.secondary': 'Entre em contato',
+            'hero.cta.cv': 'Download CV',
             'projects.title': 'Meus Projetos',
             'filter.all': 'Todos',
             'filter.sites': 'Sites',
@@ -43,11 +44,11 @@ document.addEventListener('DOMContentLoaded', function () {
             'project.bni2.subtitle': 'BNI Nebbiolo Indaiatuba - Automação Avançada via WhatsApp',
             'project.bni2.desc': 'Evolução do agente de atendimento BNI com melhorias significativas na compreensão e resposta às consultas. Integração com Google Docs para acesso direto às informações dos membros, prompt refinado para reduzir alucinações e aumentar precisão, com orquestração via n8n.',
             'about.title': 'Olá, sou o Matheus.',
-            'about.p1': 'Minha jornada na tecnologia começou de uma forma pouco convencional. Após concluir minha graduação em Direito, uma temporada em Londres despertou uma nova perspectiva e uma certeza: minha verdadeira vocação estava em construir e criar no universo digital.',
-            'about.p2': 'De volta ao Brasil, mergulhei de cabeça no mundo real, aplicando meus novos conhecimentos no e-commerce da minha família. Ali, fui além da teoria, criando landing pages, gerenciando o site, desenvolvendo campanhas e automações que geravam resultados concretos. Foi essa experiência prática que solidificou minha paixão: transformar ideias e sonhos em interfaces funcionais e elegantes que as pessoas realmente usam.',
-            'about.p3': 'Como engenheiro de software, sou guiado por uma filosofia de minimalismo estratégico. Valorizo soluções diretas e um código que seja não apenas limpo e performático, mas também de fácil entendimento para futuras atualizações. Para mim, um bom design é aquele que une beleza, funcionalidade e acessibilidade para todos. Sou metódico, analítico e organizado, qualidades que aplico em cada linha de código e em cada projeto que desenvolvo.',
-            'about.p4': 'Fora do universo digital, meu foco e disciplina são canalizados em outra grande paixão: a corrida de rua. Como maratonista, aprendi que os maiores desafios são vencidos com consistência, estratégia e a visão de que o impossível é apenas uma questão de tempo e dedicação.',
-            'about.p5': 'Impulsionado pela velocidade com que a tecnologia avança, meu objetivo é trabalhar com pessoas que também pensam no futuro, vivendo os dias de hoje. Porque, para mim, o impossível é apenas o próximo grande projeto esperando para ser construído.',
+            'about.p1': 'Minha jornada na tecnologia começou de forma pouco convencional. Graduado em Direito, uma temporada em Londres foi o ponto de virada: percebi que minha verdadeira vocação estava em construir no universo digital. De volta ao Brasil, coloquei em prática no e-commerce da família — criando landing pages, automações e campanhas que geravam resultados concretos.',
+            'about.p2': 'Hoje, baseado em Dublin, atuo como desenvolvedor full-stack com foco em soluções que unem desenvolvimento web e automação com IA. Sou guiado por minimalismo estratégico: código limpo, design funcional e soluções diretas. Fora do digital, sou maratonista — consistência e estratégia que também aplico em cada projeto.',
+            'about.p3': '',
+            'about.p4': '',
+            'about.p5': '',
             'contact.title': 'Vamos conversar',
             'contact.p1': 'Estou aberto a novas oportunidades, colaborações e projetos interessantes. Baseado em Dublin, Irlanda e disponível para trabalho remoto.',
             'contact.p2': '',
@@ -69,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
             'hero.subtitle': 'Full-Stack Developer & AI Automation Engineer building robust and elegant digital solutions.',
             'hero.cta.primary': 'See my projects',
             'hero.cta.secondary': 'Get in touch',
+            'hero.cta.cv': 'Download CV',
             'projects.title': 'My Projects',
             'filter.all': 'All',
             'filter.sites': 'Websites',
@@ -98,11 +100,11 @@ document.addEventListener('DOMContentLoaded', function () {
             'project.bni2.subtitle': 'BNI Nebbiolo Indaiatuba — Advanced WhatsApp Automation',
             'project.bni2.desc': 'Evolution of the BNI agent with significant improvements in query understanding and response accuracy. Integrated Google Docs tools for direct access to member data, with refined prompting to reduce hallucinations — orchestrated via n8n.',
             'about.title': 'Hi, I\'m Matheus.',
-            'about.p1': 'My journey into tech started unconventionally. After completing a Law degree in Brazil, a stint in London sparked a new perspective and a clear realization: my true calling was to build and create in the digital world.',
-            'about.p2': 'Back in Brazil, I dove headfirst into the real world — applying my new skills to my family\'s e-commerce business. I went beyond theory, building landing pages, managing the website, and developing campaigns and automations that delivered concrete results. That hands-on experience solidified my passion: turning ideas into functional, elegant interfaces that people actually use.',
-            'about.p3': 'As a software engineer, I\'m guided by a philosophy of strategic minimalism. I value direct solutions and code that is not only clean and performant, but also easy to understand for future updates. Good design, to me, unites beauty, functionality, and accessibility. I\'m methodical, analytical, and organized — qualities I bring to every line of code and every project I develop.',
-            'about.p4': 'Outside the digital world, my focus and discipline are channelled into another great passion: road running. As a marathon runner, I\'ve learned that the biggest challenges are overcome with consistency, strategy, and the belief that the impossible is just a matter of time and dedication.',
-            'about.p5': 'Now based in Dublin, Ireland, I\'m driven by the pace of technological change and eager to work with forward-thinking teams. Because for me, the impossible is simply the next great project waiting to be built.',
+            'about.p1': 'My journey into tech started unconventionally. After a Law degree in Brazil, a stint in London was the turning point — I realised my calling was to build in the digital world. Back in Brazil, I put that into practice in my family\'s e-commerce business, building landing pages, automations and campaigns that delivered real results.',
+            'about.p2': 'Now based in Dublin, I work as a full-stack developer focused on solutions that combine web development and AI automation. I\'m guided by strategic minimalism: clean code, functional design, and direct solutions. Outside of tech, I\'m a marathon runner — consistency and strategy I bring to every project.',
+            'about.p3': '',
+            'about.p4': '',
+            'about.p5': '',
             'contact.title': 'Let\'s Talk',
             'contact.p1': 'I\'m always open to new opportunities, collaborations, and interesting projects. Based in Dublin, Ireland and available for remote work worldwide.',
             'contact.p2': '',
@@ -146,6 +148,29 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     applyTranslations(currentLang);
+
+    // =====================
+    // HAMBURGER MENU
+    // =====================
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('main-nav');
+
+    if (hamburger && mainNav) {
+        hamburger.addEventListener('click', function () {
+            const isOpen = mainNav.classList.toggle('open');
+            hamburger.classList.toggle('open', isOpen);
+            hamburger.setAttribute('aria-expanded', isOpen);
+        });
+
+        // Fecha o menu ao clicar em um link
+        mainNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('open');
+                hamburger.classList.remove('open');
+                hamburger.setAttribute('aria-expanded', false);
+            });
+        });
+    }
 
     // =====================
     // PROJECT FILTER
