@@ -13,10 +13,7 @@
     <!-- Ícones (Font Awesome) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Link para seu CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Link para seu JavaScript -->
     <script src="assets/js/script.js" defer></script>
 </head>
 <body>
@@ -24,69 +21,63 @@
     <!-- CABEÇALHO -->
     <header>
         <div class="container header-container">
-            <a href="#" class="logo">
-                &lt;MDS/&gt;
-            </a>
+            <a href="#" class="logo">&lt;MDS/&gt;</a>
             <nav>
                 <ul>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#about">Sobre Mim</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+                    <li><a href="#about" data-i18n="nav.about">Sobre Mim</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
                 </ul>
+                <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
             </nav>
         </div>
     </header>
 
     <main>
         <!-- SEÇÃO INICIAL (HERO) -->
-<section id="home">
-    <div class="container home-container">
-        
-        <!-- Coluna de Texto -->
-        <div class="hero-text">
-            <h1>Matheus Dias de Souza</h1>
-            <p class="subtitle">Desenvolvedor Web especializado em criar soluções digitais robustas e elegantes.</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">Veja meus projetos</a>
-                <a href="#contact" class="btn btn-secondary">Entre em contato</a>
+        <section id="home">
+            <div class="container home-container">
+
+                <div class="hero-text">
+                    <h1>Matheus Dias de Souza</h1>
+                    <p class="subtitle" data-i18n="hero.subtitle">Desenvolvedor Web especializado em criar soluções digitais robustas e elegantes.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary" data-i18n="hero.cta.primary">Veja meus projetos</a>
+                        <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta.secondary">Entre em contato</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="https://id22.com.br/wp-content/uploads/2025/11/Generatedimage_1762868354594.png" alt="Ilustração abstrata 3D que representa engenharia de software">
+                </div>
+
             </div>
-        </div>
-
-        <!-- Coluna da Imagem -->
-        <div class="hero-image">
-            <img src="https://id22.com.br/wp-content/uploads/2025/11/Generatedimage_1762868354594.png" alt="Ilustração abstrata 3D que representa engenharia de software">
-        </div>
-
-    </div>
-</section>
-        
+        </section>
 
         <!-- SEÇÃO DE PROJETOS -->
         <section id="projects">
             <div class="container">
-                <h2>Meus Projetos</h2>
-                <!-- BOTÕES DE FILTRO -->
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="site">Sites</button>
-                <button class="filter-btn" data-filter="lp">Landing Pages</button>
-                <button class="filter-btn" data-filter="automation">Automações</button>
-            </div>
+                <h2 data-i18n="projects.title">Meus Projetos</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all" data-i18n="filter.all">Todos</button>
+                    <button class="filter-btn" data-filter="site" data-i18n="filter.sites">Sites</button>
+                    <button class="filter-btn" data-filter="lp" data-i18n="filter.lp">Landing Pages</button>
+                    <button class="filter-btn" data-filter="automation" data-i18n="filter.automation">Automações</button>
+                </div>
                 <div class="project-grid">
-                    
+
                     <!-- Projeto 1: ID22 -->
                     <div class="project-card" data-filter="site">
                         <img src="https://id22.com.br/wp-content/uploads/2025/11/ID22.jpg" alt="Preview do site ID22">
                         <div class="card-content">
                             <h3>ID22 Marketing e Tecnologia</h3>
-                            <h4>Site Institucional & Plataforma de Atendimento</h4>
-                            <p>Desenvolvimento do site institucional do zero, refletindo a identidade inovadora da agência, e implementação de um agente de atendimento virtual inteligente via WhatsApp.</p>
+                            <h4 data-i18n="project.id22.subtitle">Site Institucional & Plataforma de Atendimento</h4>
+                            <p data-i18n="project.id22.desc">Desenvolvimento do site institucional do zero, refletindo a identidade inovadora da agência, e implementação de um agente de atendimento virtual inteligente via WhatsApp.</p>
                             <div class="tech-tags">
                                 <span>WordPress</span><span>HTML</span><span>CSS</span><span>n8n</span><span>Supabase</span><span>OpenAI API</span>
                             </div>
                             <div class="card-buttons">
-                                <a href="https://id22.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> Ver ao Vivo</a>
-                                <!-- <a href="#" target="_blank" class="btn-card-secondary"><i class="fa-brands fa-github"></i> Ver Código</a> -->
+                                <a href="https://id22.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
                             </div>
                         </div>
                     </div>
@@ -96,49 +87,45 @@
                         <img src="https://id22.com.br/wp-content/uploads/2025/11/Casa-Nova.jpg" alt="Preview do site Casa Nova">
                         <div class="card-content">
                             <h3>Casa Nova Móveis Planejados</h3>
-                            <h4>Portfólio Digital Interativo</h4>
-                            <p>Criação de uma vitrine digital elegante para uma empresa de móveis, com foco na experiência visual e uma galeria interativa customizada com HTML e CSS para exibir os projetos.</p>
+                            <h4 data-i18n="project.casanova.subtitle">Portfólio Digital Interativo</h4>
+                            <p data-i18n="project.casanova.desc">Criação de uma vitrine digital elegante para uma empresa de móveis, com foco na experiência visual e uma galeria interativa customizada com HTML e CSS para exibir os projetos.</p>
                             <div class="tech-tags">
                                 <span>WordPress</span><span>HTML</span><span>CSS</span>
                             </div>
                             <div class="card-buttons">
-                                <a href="https://casanovaprojetos.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> Ver ao Vivo</a>
+                                <a href="https://casanovaprojetos.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Projeto 3: Mundo Geopolítico -->
-                     <div class="project-card" data-filter="site">
+                    <div class="project-card" data-filter="site">
                         <img src="https://id22.com.br/wp-content/uploads/2025/11/Mundo-Geopolitico.jpg" alt="Preview do site Mundo Geopolítico">
                         <div class="card-content">
                             <h3>Mundo Geopolítico</h3>
-                            <h4>Plataforma de Conteúdo & Análise</h4>
-                            <p>Gestão completa do projeto, da negociação à entrega, criando um site institucional e um blog de análises para um especialista, incluindo configuração de hospedagem e e-mails.</p>
+                            <h4 data-i18n="project.mundogeo.subtitle">Plataforma de Conteúdo & Análise</h4>
+                            <p data-i18n="project.mundogeo.desc">Gestão completa do projeto, da negociação à entrega, criando um site institucional e um blog de análises para um especialista, incluindo configuração de hospedagem e e-mails.</p>
                             <div class="tech-tags">
                                 <span>WordPress</span><span>HTML</span><span>CSS</span><span>Hostinger</span>
                             </div>
                             <div class="card-buttons">
-                                <a href="https://mundogeopolitico.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> Ver ao Vivo</a>
+                                <a href="https://mundogeopolitico.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
                             </div>
                         </div>
                     </div>
 
-                    
-                    <!-- Projeto 4: Blog Mundo Geopolítico-->
+                    <!-- Projeto 4: Blog Mundo Geopolítico -->
                     <div class="project-card" data-filter="site">
                         <img src="assets/images/artigos.mundo.geopolitico.img.jpg" alt="Preview do Blog Mundo Geopolítico">
                         <div class="card-content">
                             <h3>Blog Mundo Geopolítico</h3>
-                            <h4>Desenvolvimento de Blog Personalizado</h4>
-                            <p>
-                                Desenvolvimento e integração de um blog para expandir a presença digital do especialista. O foco foi na criação de uma arquitetura 
-                                de conteúdo otimizada para SEO, visando atrair tráfego orgânico e estabelecer o autor como uma autoridade no nicho.
-                            </p>
+                            <h4 data-i18n="project.blogmundogeo.subtitle">Desenvolvimento de Blog Personalizado</h4>
+                            <p data-i18n="project.blogmundogeo.desc">Desenvolvimento e integração de um blog para expandir a presença digital do especialista. O foco foi na criação de uma arquitetura de conteúdo otimizada para SEO, visando atrair tráfego orgânico e estabelecer o autor como uma autoridade no nicho.</p>
                             <div class="tech-tags">
                                 <span>WordPress</span><span>HTML</span><span>CSS</span><span>SEO</span>
                             </div>
                             <div class="card-buttons">
-                                <a href="https://artigos.mundogeopolitico.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> Ver ao Vivo</a>
+                                <a href="https://artigos.mundogeopolitico.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
                             </div>
                         </div>
                     </div>
@@ -148,13 +135,13 @@
                         <img src="https://id22.com.br/wp-content/uploads/2025/11/ClauMixx.jpg" alt="Preview do site ClauMixx">
                         <div class="card-content">
                             <h3>ClauMixx - Lançamento</h3>
-                            <h4>Landing Page de Vendas Diretas</h4>
-                            <p>Criação de uma landing page de alta conversão para o lançamento de um produto, validando um novo canal de vendas para o cliente que gerou 7 vendas já na primeira semana.</p>
+                            <h4 data-i18n="project.claumixx.subtitle">Landing Page de Vendas Diretas</h4>
+                            <p data-i18n="project.claumixx.desc">Criação de uma landing page de alta conversão para o lançamento de um produto, validando um novo canal de vendas para o cliente que gerou 7 vendas já na primeira semana.</p>
                             <div class="tech-tags">
                                 <span>WordPress</span>
                             </div>
                             <div class="card-buttons">
-                                <a href="https://claumixx.com/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> Ver ao Vivo</a>
+                                <a href="https://claumixx.com/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
                             </div>
                         </div>
                     </div>
@@ -164,15 +151,13 @@
                         <img src="assets/images/lp.cicero.neri.img.jpg" alt="Preview do site Cícero Neri">
                         <div class="card-content">
                             <h3>Cícero Neri - Consultoria de Vendas</h3>
-                            <h4>Presença Digital para Consultor de Vendas</h4>
-                            <p>
-                                Desenvolvimento de uma landing page de captação de lead para um consultor de vendas e palestrante, focando na 
-                                apresentação profissional e na criação de conteúdo relevante para o público-alvo.</p>
+                            <h4 data-i18n="project.ciceroneri.subtitle">Presença Digital para Consultor de Vendas</h4>
+                            <p data-i18n="project.ciceroneri.desc">Desenvolvimento de uma landing page de captação de lead para um consultor de vendas e palestrante, focando na apresentação profissional e na criação de conteúdo relevante para o público-alvo.</p>
                             <div class="tech-tags">
                                 <span>WordPress</span><span>HTML</span><span>CSS</span><span>SEO</span>
                             </div>
                             <div class="card-buttons">
-                                <a href="https://ciceroneri.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> Ver ao Vivo</a>
+                                <a href="https://ciceroneri.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
                             </div>
                         </div>
                     </div>
@@ -182,115 +167,77 @@
                         <img src="assets/images/site-tubo-forte-img.jpg" alt="Preview do site Tubo Forte">
                         <div class="card-content">
                             <h3>Tubo Forte Plásticos</h3>
-                            <h4>Site Institucional & Catálogo Digital B2B</h4>
-                            <p>
-                                Desenvolvimento de um site institucional para uma empresa com mais de 20 anos de mercado, com foco em narrar sua história 
-                                e destacar seus valores de inovação e sustentabilidade. O projeto foi concebido do zero, desde o design minimalista até a 
-                                criação de um canal no YouTube para integrar vídeos da empresa, resultando em uma identidade digital forte que gerou nova 
-                                visibilidade e clientes.
-                            </p>
+                            <h4 data-i18n="project.tuboforte.subtitle">Site Institucional & Catálogo Digital B2B</h4>
+                            <p data-i18n="project.tuboforte.desc">Desenvolvimento de um site institucional para uma empresa com mais de 20 anos de mercado, com foco em narrar sua história e destacar seus valores de inovação e sustentabilidade. Projeto concebido do zero, desde o design minimalista até a criação de um canal no YouTube para integrar vídeos da empresa.</p>
                             <div class="tech-tags">
                                 <span>WordPress</span><span>HTML</span><span>CSS</span><span>SEO</span><span>Design UI/UX</span>
                             </div>
                             <div class="card-buttons">
-                                <a href="https://tuboforteplasticos.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> Ver ao Vivo</a>
+                                <a href="https://tuboforteplasticos.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Projeto 8: Dra. Saúde -->
+
+                    <!-- Projeto 8: Dra. Larissa Ramalho -->
                     <div class="project-card" data-filter="lp">
                         <img src="assets/images/lp-dra-larissa-img.jpg" alt="Preview do Landing Page Dra. Larissa Ramalho">
                         <div class="card-content">
                             <h3>Dra. Larissa Ramalho</h3>
-                            <h4>Landing Page para Captação de Leads</h4>
-                            <p>
-                                Criação de uma landing page estratégica para uma médica em início de carreira, projetada para construir autoridade e captar novos 
-                                pacientes. Desenvolvi o projeto do design à entrega, aplicando um estilo minimalista e informativo para comunicar sua especialidade 
-                                e história, resultando em maior visibilidade e na aquisição de clientes em um momento crucial da sua trajetória.
-                            </p>
+                            <h4 data-i18n="project.dralarissa.subtitle">Landing Page para Captação de Leads</h4>
+                            <p data-i18n="project.dralarissa.desc">Criação de uma landing page estratégica para uma médica em início de carreira, projetada para construir autoridade e captar novos pacientes. Desenvolvi do design à entrega, aplicando um estilo minimalista e informativo, resultando em maior visibilidade e aquisição de clientes.</p>
                             <div class="tech-tags">
                                 <span>WordPress</span><span>HTML</span><span>CSS</span><span>SEO</span><span>Lead Gen</span>
                             </div>
                             <div class="card-buttons">
-                                <a href="https://dralarissaramalho.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> Ver ao Vivo</a>
+                                <a href="https://dralarissaramalho.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Projeto 9: AP Soluções Humanas -->
-                     <div class="project-card" data-filter="site">
+                    <div class="project-card" data-filter="site">
                         <img src="assets/images/site.ap.solucoes.hamanas.png" alt="Preview do site AP Soluções Humanas">
                         <div class="card-content">
                             <h3>AP Soluções Humanas</h3>
-                            <h4>Site Institucional & Plataforma de Serviços</h4>
-                            <p>
-                                Este projeto envolveu o desenvolvimento de diversas páginas web e a implementação de uma solução de automação customizada e 
-                                sem plugins para o site da AP Soluções Humanas, otimizando a experiência do usuário e processos críticos da cliente.
-                            </p>
+                            <h4 data-i18n="project.apsolucoes.subtitle">Site Institucional & Plataforma de Serviços</h4>
+                            <p data-i18n="project.apsolucoes.desc">Desenvolvimento de diversas páginas web e implementação de uma solução de automação customizada e sem plugins para o site da AP Soluções Humanas, otimizando a experiência do usuário e processos críticos da cliente.</p>
                             <div class="tech-tags">
-                                <span>WordPress</span><span>HTML</span><span>CSS</span><span>Fomulários</span><span>Automações</span>
+                                <span>WordPress</span><span>HTML</span><span>CSS</span><span>Formulários</span><span>Automações</span>
                             </div>
                             <div class="card-buttons">
-                                <a href="https://id22.com.br/home-apsolucoes/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> Ver ao Vivo</a>
+                                <a href="https://id22.com.br/home-apsolucoes/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Projeto 10: Automação Agente de atendimento BNI 1º Versão -->
+                    <!-- Projeto 10: Agente BNI 1ª Versão -->
                     <div class="project-card" data-filter="automation">
                         <img src="assets/images/Agente-BNI-Atendimento.jpg" alt="Preview da automação Agente de Atendimento BNI">
                         <div class="card-content">
-                            <h3>Agente de Atendimento BNI - 1º Versão</h3>
-                            <h4>BNI Nebbiolo Indaiatuba - Automação de Atendimento via WhatsApp</h4>
-                            <p>
-                                Desenvolvimento de um agente de atendimento virtual para o BNI, utilizando n8n para orquestrar fluxos de trabalho e integrar com a API não oficial
-                                do WhatsApp (Evolution API). 
-                                O agente responde perguntas frequentes sobre membros do BNI, informaçõs gerais. Todos os dados dos membros estão organizados em um Banco de dados no Supabase.
-                                O agente armazena todos os contatos de interação através do PostgreSQL no Supabase, permitindo análises futuras e melhorias contínuas.
-                            </p>
+                            <h3>Agente de Atendimento BNI - 1ª Versão</h3>
+                            <h4 data-i18n="project.bni1.subtitle">BNI Nebbiolo Indaiatuba - Automação de Atendimento via WhatsApp</h4>
+                            <p data-i18n="project.bni1.desc">Desenvolvimento de um agente de atendimento virtual para o BNI, utilizando n8n para orquestrar fluxos de trabalho e integrar com a API do WhatsApp (Evolution API). O agente responde perguntas frequentes sobre membros do BNI, com todos os dados armazenados no Supabase/PostgreSQL.</p>
                             <div class="tech-tags">
-                                <span>n8n</span>
-                                <span>Evolution API</span>
-                                <span>PostgreSQL</span>
-                                <span>Supabase</span>
-                                <span>OpenAI API</span>
-                                <span>Agente IA</span>
-                                <span>Lead Qualificação</span>
+                                <span>n8n</span><span>Evolution API</span><span>PostgreSQL</span><span>Supabase</span><span>OpenAI API</span><span>AI Agent</span>
                             </div>
-                            <div class="card-buttons">
-                                <!-- <a href="#" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> Ver ao Vivo</a> -->
-                                <!-- <a href="#" target="_blank" class="btn-card-secondary"><i class="fa-brands fa-github"></i> Ver Código</a> -->
-                            </div>
+                            <div class="card-buttons"></div>
                         </div>
                     </div>
+
+                    <!-- Projeto 11: Agente BNI 2ª Versão -->
                     <div class="project-card" data-filter="automation">
                         <img src="assets/images/Agente-BNI2-Atendimento.jpg" alt="Preview da automação Agente de Atendimento BNI 2ª Versão">
                         <div class="card-content">
                             <h3>Agente de Atendimento BNI - 2ª Versão</h3>
-                            <h4>BNI Nebbiolo Indaiatuba - Automação Avançada de Atendimento via WhatsApp</h4>
-                            <p>
-                                Evolução do agente de atendimento virtual para o BNI, com melhorias significativas na compreensão e resposta às consultas dos usuários.
-                                A nova versão utiliza Tools do google docs com informações dos membros e do BNI Nebbiolo conectadas diretamente com o Agente, com direcionamento
-                                aperfeiçoado no prompt, foi reduzido a probabilidade de alucinação e respostas erradas, trazendo precisão e acesso direto às informações corretas.
-                                Além disso, o agente agora integra a OpenAI API para fornecer respostas mais precisas e contextuais, aprimorando a experiência do usuário.
-                                A integração com n8n continua, garantindo uma orquestração eficiente dos fluxos de trabalho.
-                            </p>
+                            <h4 data-i18n="project.bni2.subtitle">BNI Nebbiolo Indaiatuba - Automação Avançada via WhatsApp</h4>
+                            <p data-i18n="project.bni2.desc">Evolução do agente de atendimento BNI com melhorias significativas na compreensão e resposta às consultas. Integração com Google Docs para acesso direto às informações dos membros, prompt refinado para reduzir alucinações e aumentar precisão, com orquestração via n8n.</p>
                             <div class="tech-tags">
-                                <span>n8n</span>
-                                <span>OpenAI API</span>
-                                <span>Evolution API</span>
-                                <span>PostgreSQL</span>
-                                <span>Supabase</span>
-                                <span>Agente IA</span>
-                                <span>Lead Qualificação</span>
+                                <span>n8n</span><span>OpenAI API</span><span>Evolution API</span><span>PostgreSQL</span><span>Supabase</span><span>AI Agent</span>
                             </div>
-                            <div class="card-buttons">
-                                <!-- <a href="#" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> Ver ao Vivo</a> -->
-                                <!-- <a href="#" target="_blank" class="btn-card-secondary"><i class="fa-brands fa-github"></i> Ver Código</a> -->
-                            </div>
+                            <div class="card-buttons"></div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -302,36 +249,23 @@
                     <img src="https://id22.com.br/wp-content/uploads/2025/11/Imagem-do-WhatsApp-de-2025-09-03-as-19.14.06_8d3f4f8b.jpg" alt="Foto de Matheus Dias de Souza">
                 </div>
                 <div class="about-text">
-                    <h2>Olá, sou o Matheus.</h2>
-                    <p>Minha jornada na tecnologia começou de uma forma pouco convencional. Após concluir minha graduação em Direito, uma temporada em Londres despertou uma nova perspectiva e uma certeza: minha verdadeira vocação estava em construir e criar no universo digital.</p>
-                    <p>De volta ao Brasil, mergulhei de cabeça no mundo real, aplicando meus novos conhecimentos no e-commerce da minha família. Ali, fui além da teoria, criando landing pages, gerenciando o site, desenvolvendo campanhas e automações que geravam resultados concretos. Foi essa experiência prática que solidificou minha paixão: transformar ideias e sonhos em interfaces funcionais e elegantes que as pessoas realmente usam.</p>
-                    <p>Como engenheiro de software, sou guiado por uma filosofia de minimalismo estratégico. Valorizo soluções diretas e um código que seja não apenas limpo e performático, mas também de fácil entendimento para futuras atualizações. Para mim, um bom design é aquele que une beleza, funcionalidade e acessibilidade para todos. Sou metódico, analítico e organizado, qualidades que aplico em cada linha de código e em cada projeto que desenvolvo.</p>
-                    <p>Fora do universo digital, meu foco e disciplina são canalizados em outra grande paixão: a corrida de rua. Como maratonista, aprendi que os maiores desafios são vencidos com consistência, estratégia e a visão de que o impossível é apenas uma questão de tempo e dedicação.</p>
-                    <p>Impulsionado pela velocidade com que a tecnologia avança, meu objetivo é trabalhar com pessoas que também pensam no futuro, vivendo os dias de hoje. Porque, para mim, o impossível é apenas o próximo grande projeto esperando para ser construído.</p>
+                    <h2 data-i18n="about.title">Olá, sou o Matheus.</h2>
+                    <p data-i18n="about.p1">Minha jornada na tecnologia começou de uma forma pouco convencional. Após concluir minha graduação em Direito, uma temporada em Londres despertou uma nova perspectiva e uma certeza: minha verdadeira vocação estava em construir e criar no universo digital.</p>
+                    <p data-i18n="about.p2">De volta ao Brasil, mergulhei de cabeça no mundo real, aplicando meus novos conhecimentos no e-commerce da minha família. Ali, fui além da teoria, criando landing pages, gerenciando o site, desenvolvendo campanhas e automações que geravam resultados concretos. Foi essa experiência prática que solidificou minha paixão: transformar ideias e sonhos em interfaces funcionais e elegantes que as pessoas realmente usam.</p>
+                    <p data-i18n="about.p3">Como engenheiro de software, sou guiado por uma filosofia de minimalismo estratégico. Valorizo soluções diretas e um código que seja não apenas limpo e performático, mas também de fácil entendimento para futuras atualizações. Para mim, um bom design é aquele que une beleza, funcionalidade e acessibilidade para todos. Sou metódico, analítico e organizado, qualidades que aplico em cada linha de código e em cada projeto que desenvolvo.</p>
+                    <p data-i18n="about.p4">Fora do universo digital, meu foco e disciplina são canalizados em outra grande paixão: a corrida de rua. Como maratonista, aprendi que os maiores desafios são vencidos com consistência, estratégia e a visão de que o impossível é apenas uma questão de tempo e dedicação.</p>
+                    <p data-i18n="about.p5">Impulsionado pela velocidade com que a tecnologia avança, meu objetivo é trabalhar com pessoas que também pensam no futuro, vivendo os dias de hoje. Porque, para mim, o impossível é apenas o próximo grande projeto esperando para ser construído.</p>
                 </div>
             </div>
         </section>
-        
+
         <!-- SEÇÃO DE CONTATO -->
         <section id="contact">
             <div class="container contact-container">
-                <h2>Precisa de ajuda? Vamos conversar</h2>
-                <p>
-                    Estou sempre aberto a novas oportunidades e colaborações, e posso ajudar através de projetos práticos já implementados que unem a eficiência 
-                    da automação com a excelência do desenvolvimento web. Implemento agentes de IA que utilizam o N8N para orquestrar fluxos de trabalho e responder 
-                    ao WhatsApp de forma inteligente, gerenciando a triagem inicial de leads e fornecendo respostas rápidas.
-                </p>
-                <p>
-                    No front-end, crio sites e landing pages de alta conversão usando Elementor, complementando-os com a configuração e gestão de envio de Email 
-                    Marketing e pela criação de blogs estratégicos que atraem tráfego qualificado. Em e-commerce, administro plataformas como Loja Integrada e Tray 
-                    Commerce, garantindo a estabilidade e performance da loja, além de cuidar da administração de hospedagem e do desenvolvimento de scripts 
-                    específicos para otimização de tarefas e integração de sistemas.
-                </p>
-                <p>
-                    Para completar, desenvolvo e-books e tutoriais de suporte técnico que não apenas capacitam clientes e equipes, mas reduzem a demanda por suporte 
-                    recorrente, melhorando a satisfação e a eficiência operacional. Eu transformo suas ferramentas em um ecossistema de crescimento e minha proposta 
-                    é clara: usar tecnologia de ponta para automatizar o que é repetitivo e focar no desenvolvimento do que é estratégico.
-                </p>
+                <h2 data-i18n="contact.title">Precisa de ajuda? Vamos conversar</h2>
+                <p data-i18n="contact.p1">Estou sempre aberto a novas oportunidades e colaborações, e posso ajudar através de projetos práticos já implementados que unem a eficiência da automação com a excelência do desenvolvimento web. Implemento agentes de IA que utilizam o N8N para orquestrar fluxos de trabalho e responder ao WhatsApp de forma inteligente, gerenciando a triagem inicial de leads e fornecendo respostas rápidas.</p>
+                <p data-i18n="contact.p2">No front-end, crio sites e landing pages de alta conversão usando Elementor, complementando-os com a configuração e gestão de envio de Email Marketing e pela criação de blogs estratégicos que atraem tráfego qualificado. Em e-commerce, administro plataformas como Loja Integrada e Tray Commerce, garantindo a estabilidade e performance da loja, além de cuidar da administração de hospedagem e do desenvolvimento de scripts específicos para otimização de tarefas e integração de sistemas.</p>
+                <p data-i18n="contact.p3">Para completar, desenvolvo e-books e tutoriais de suporte técnico que não apenas capacitam clientes e equipes, mas reduzem a demanda por suporte recorrente, melhorando a satisfação e a eficiência operacional. Eu transformo suas ferramentas em um ecossistema de crescimento e minha proposta é clara: usar tecnologia de ponta para automatizar o que é repetitivo e focar no desenvolvimento do que é estratégico.</p>
                 <div class="contact-links">
                     <a href="mailto:matheusdias.dev96@gmail.com" class="contact-link">
                         <i class="fa-solid fa-envelope"></i>
@@ -354,10 +288,8 @@
     <!-- RODAPÉ -->
     <footer>
         <div class="container">
-            <a href="#" class="logo-footer">
-                &lt;MDS/&gt;
-            </a>
-            <p>&copy; 2025 Matheus Dias de Souza. Todos os direitos reservados.</p>
+            <a href="#" class="logo-footer">&lt;MDS/&gt;</a>
+            <p data-i18n="footer.rights">© 2025 Matheus Dias de Souza. Todos os direitos reservados.</p>
         </div>
     </footer>
 

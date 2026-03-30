@@ -70,10 +70,34 @@ header {
     font-weight: 700;
 }
 
+header nav {
+    display: flex;
+    align-items: center;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
     gap: 25px;
+}
+
+.lang-toggle {
+    background: transparent;
+    border: 1px solid var(--verde-militar);
+    color: var(--verde-militar);
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 25px;
+}
+
+.lang-toggle:hover {
+    background-color: var(--verde-militar);
+    color: var(--off-white);
 }
 
 header nav a {
