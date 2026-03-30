@@ -6,8 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const translations = {
         pt: {
             'nav.projects': 'Projetos',
+            'nav.skills': 'Skills',
             'nav.about': 'Sobre Mim',
             'nav.contact': 'Contato',
+            'hero.location': 'Dublin, Ireland',
             'hero.subtitle': 'Desenvolvedor Web especializado em criar soluções digitais robustas e elegantes.',
             'hero.cta.primary': 'Veja meus projetos',
             'hero.cta.secondary': 'Entre em contato',
@@ -49,12 +51,19 @@ document.addEventListener('DOMContentLoaded', function () {
             'contact.p1': 'Estou sempre aberto a novas oportunidades e colaborações, e posso ajudar através de projetos práticos já implementados que unem a eficiência da automação com a excelência do desenvolvimento web. Implemento agentes de IA que utilizam o N8N para orquestrar fluxos de trabalho e responder ao WhatsApp de forma inteligente, gerenciando a triagem inicial de leads e fornecendo respostas rápidas.',
             'contact.p2': 'No front-end, crio sites e landing pages de alta conversão usando Elementor, complementando-os com a configuração e gestão de envio de Email Marketing e pela criação de blogs estratégicos que atraem tráfego qualificado. Em e-commerce, administro plataformas como Loja Integrada e Tray Commerce, garantindo a estabilidade e performance da loja, além de cuidar da administração de hospedagem e do desenvolvimento de scripts específicos para otimização de tarefas e integração de sistemas.',
             'contact.p3': 'Para completar, desenvolvo e-books e tutoriais de suporte técnico que não apenas capacitam clientes e equipes, mas reduzem a demanda por suporte recorrente, melhorando a satisfação e a eficiência operacional. Eu transformo suas ferramentas em um ecossistema de crescimento e minha proposta é clara: usar tecnologia de ponta para automatizar o que é repetitivo e focar no desenvolvimento do que é estratégico.',
+            'skills.title': 'Skills',
+            'skills.frontend': 'Frontend',
+            'skills.backend': 'Backend & Infra',
+            'skills.ai': 'IA & Automação',
+            'skills.tools': 'Ferramentas',
             'footer.rights': '© 2025 Matheus Dias de Souza. Todos os direitos reservados.',
         },
         en: {
             'nav.projects': 'Projects',
+            'nav.skills': 'Skills',
             'nav.about': 'About',
             'nav.contact': 'Contact',
+            'hero.location': 'Dublin, Ireland',
             'hero.subtitle': 'Full-Stack Developer & AI Automation Engineer building robust and elegant digital solutions.',
             'hero.cta.primary': 'See my projects',
             'hero.cta.secondary': 'Get in touch',
@@ -96,6 +105,11 @@ document.addEventListener('DOMContentLoaded', function () {
             'contact.p1': 'I\'m always open to new opportunities, collaborations, and interesting projects. Based in Dublin, Ireland and available for remote work worldwide.',
             'contact.p2': '',
             'contact.p3': '',
+            'skills.title': 'Skills',
+            'skills.frontend': 'Frontend',
+            'skills.backend': 'Backend & Infra',
+            'skills.ai': 'AI & Automation',
+            'skills.tools': 'Tools',
             'footer.rights': '© 2025 Matheus Dias de Souza. All rights reserved.',
         }
     };
