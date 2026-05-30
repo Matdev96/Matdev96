@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(sed -i 's/<img src=\"\"assets\\\\/images\\\\/\\\\\\([^\"\"]*\\\\\\)\"\" alt=\"\"\\\\\\([^\"\"]*\\\\\\)\"\">/<img src=\"\"assets\\\\/images\\\\/\\\\1\"\" alt=\"\"\\\\2\"\" loading=\"\"lazy\"\">/g' index.html)",
+      "Bash(sed -i 's/<img src=\"\"https:\\\\/\\\\/id22\\\\.com\\\\.br\\\\/\\\\\\([^\"\"]*\\\\\\)\"\" alt=\"\"\\\\\\([^\"\"]*\\\\\\)\"\">/<img src=\"\"https:\\\\/\\\\/id22.com.br\\\\/\\\\1\"\" alt=\"\"\\\\2\"\" loading=\"\"lazy\"\">/g' index.html)",
+      "WebFetch(domain:vocustompainting.com)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}
