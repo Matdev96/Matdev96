@@ -16,6 +16,20 @@ document.addEventListener('DOMContentLoaded', function () {
             'hero.cta.secondary': 'Entre em contato',
             'hero.cta.cv': 'Download CV',
             'projects.title': 'Meus Projetos',
+            'projects.lead': 'Sites institucionais e landing pages que desenvolvi do design ao deploy. Arraste para o lado ou use as setas para conhecer cada projeto.',
+            'projects.automation': 'Automações & IA',
+            'pc.ackermannleiloes.kind': 'Landing page editorial',
+            'pc.ciceroneri.kind': 'Landing page para consultoria comercial',
+            'pc.paiola.kind': 'Site institucional para assistência técnica',
+            'pc.paiolalavaseca.kind': 'Landing page para captação de orçamentos',
+            'pc.cdccampinas.kind': 'Landing page de evento para profissionais da saúde',
+            'pc.trekkingcapital.kind': 'Site para assessoria em investimentos imobiliários',
+            'pc.ackermann.kind': 'Landing page para escritório jurídico',
+            'pc.apsolucoes.kind': 'Site institucional para consultoria de RH',
+            'pc.tuboforte.kind': 'Site institucional e catálogo B2B',
+            'pc.claumixx.kind': 'Landing page de vendas para lançamento de produto',
+            'pc.dralarissa.kind': 'Landing page para captação de pacientes',
+            'pc.blogmundogeo.kind': 'Blog com arquitetura de conteúdo para SEO',
             'filter.all': 'Todos',
             'filter.sites': 'Sites',
             'filter.lp': 'Landing Pages',
@@ -66,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
             'skills.backend': 'Backend & Infra',
             'skills.ai': 'IA & Automação',
             'skills.tools': 'Ferramentas',
-            'footer.rights': '© 2025 Matheus Dias de Souza. Todos os direitos reservados.',
+            'footer.rights': '© 2026 Matheus Dias de Souza. Todos os direitos reservados.',
         },
         en: {
             'nav.projects': 'Projects',
@@ -80,6 +94,20 @@ document.addEventListener('DOMContentLoaded', function () {
             'hero.cta.secondary': 'Get in touch',
             'hero.cta.cv': 'Download CV',
             'projects.title': 'My Projects',
+            'projects.lead': 'Corporate websites and landing pages I built from design to deployment. Swipe or use the arrows to browse each project.',
+            'projects.automation': 'Automation & AI',
+            'pc.ackermannleiloes.kind': 'Editorial landing page',
+            'pc.ciceroneri.kind': 'Landing page for a sales consultancy',
+            'pc.paiola.kind': 'Website for an appliance repair service',
+            'pc.paiolalavaseca.kind': 'Lead-generation landing page for quote requests',
+            'pc.cdccampinas.kind': 'Event landing page for healthcare professionals',
+            'pc.trekkingcapital.kind': 'Website for a real estate investment advisory',
+            'pc.ackermann.kind': 'Landing page for a law firm',
+            'pc.apsolucoes.kind': 'Website for an HR consultancy',
+            'pc.tuboforte.kind': 'Corporate website and B2B catalogue',
+            'pc.claumixx.kind': 'Sales landing page for a product launch',
+            'pc.dralarissa.kind': 'Patient-acquisition landing page',
+            'pc.blogmundogeo.kind': 'SEO-driven content blog',
             'filter.all': 'All',
             'filter.sites': 'Websites',
             'filter.lp': 'Landing Pages',
@@ -130,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
             'skills.backend': 'Backend & Infra',
             'skills.ai': 'AI & Automation',
             'skills.tools': 'Tools',
-            'footer.rights': '© 2025 Matheus Dias de Souza. All rights reserved.',
+            'footer.rights': '© 2026 Matheus Dias de Souza. All rights reserved.',
         }
     };
 
@@ -187,26 +215,5 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
-
-    // =====================
-    // PROJECT FILTER
-    // =====================
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-            const filterValue = this.getAttribute('data-filter');
-            projectCards.forEach(card => {
-                if (filterValue === 'all' || card.getAttribute('data-filter') === filterValue) {
-                    card.classList.remove('hidden');
-                } else {
-                    card.classList.add('hidden');
-                }
-            });
-        });
-    });
 
 });

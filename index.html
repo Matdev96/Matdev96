@@ -35,7 +35,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/portfolio-carrossel.css">
     <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/portfolio-carrossel.js" defer></script>
 </head>
 <body>
 
@@ -139,224 +141,117 @@
         <section id="projects">
             <div class="container">
                 <h2 data-i18n="projects.title">Meus Projetos</h2>
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all" data-i18n="filter.all">Todos</button>
-                    <button class="filter-btn" data-filter="site" data-i18n="filter.sites">Sites</button>
-                    <button class="filter-btn" data-filter="lp" data-i18n="filter.lp">Landing Pages</button>
-                    <button class="filter-btn" data-filter="automation" data-i18n="filter.automation">Automações</button>
+                <p class="projects-lead" data-i18n="projects.lead">Sites institucionais e landing pages que desenvolvi do design ao deploy. Arraste para o lado ou use as setas para conhecer cada projeto.</p>
+            </div>
+
+            <!-- Carrossel de sites (mesmo modelo do portfólio da ID22) -->
+            <div id="portfolio-carrossel" role="region" aria-roledescription="carrossel" aria-label="Sites e landing pages" data-autoplay="true">
+                <div class="pc-stage">
+                    <div class="pc-track">
+                    <article class="pc-slide" aria-roledescription="slide" aria-label="1 de 12: Ackermann Advogados · Leilões de Imóveis">
+                        <div class="pc-media"><img src="assets/images/projetos/pf-ackermann-leiloes-1600.webp" srcset="assets/images/projetos/pf-ackermann-leiloes-800.webp 800w, assets/images/projetos/pf-ackermann-leiloes-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="763" alt="Primeira dobra do site Ackermann Advogados · Leilões de Imóveis" loading="lazy" decoding="async" draggable="false"></div>
+                        <div class="pc-cap">
+                            <a class="pc-cta" href="https://ackermannadv.com.br/version_02/contract/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Ackermann Advogados · Leilões de Imóveis</span></a>
+                            <p class="pc-text"><strong class="pc-name">Ackermann Advogados · Leilões de Imóveis</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.ackermannleiloes.kind">Landing page editorial</span></p>
+                        </div>
+                    </article>
+                    <article class="pc-slide" aria-roledescription="slide" aria-label="2 de 12: Cícero Neri">
+                        <div class="pc-media"><img src="assets/images/projetos/pf-cicero-neri-1600.webp" srcset="assets/images/projetos/pf-cicero-neri-800.webp 800w, assets/images/projetos/pf-cicero-neri-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="819" alt="Primeira dobra do site Cícero Neri" loading="lazy" decoding="async" draggable="false"></div>
+                        <div class="pc-cap">
+                            <a class="pc-cta" href="https://ciceroneri.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Cícero Neri</span></a>
+                            <p class="pc-text"><strong class="pc-name">Cícero Neri</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.ciceroneri.kind">Landing page para consultoria comercial</span></p>
+                        </div>
+                    </article>
+                    <article class="pc-slide" aria-roledescription="slide" aria-label="3 de 12: Refrigeração Paiola">
+                        <div class="pc-media"><img src="assets/images/projetos/pf-paiola-1600.webp" srcset="assets/images/projetos/pf-paiola-800.webp 800w, assets/images/projetos/pf-paiola-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="762" alt="Primeira dobra do site Refrigeração Paiola" loading="lazy" decoding="async" draggable="false"></div>
+                        <div class="pc-cap">
+                            <a class="pc-cta" href="https://refrigeracaopaiola.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Refrigeração Paiola</span></a>
+                            <p class="pc-text"><strong class="pc-name">Refrigeração Paiola</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.paiola.kind">Site institucional para assistência técnica</span></p>
+                        </div>
+                    </article>
+                    <article class="pc-slide" aria-roledescription="slide" aria-label="4 de 12: Paiola Lava e Seca">
+                        <div class="pc-media"><img src="assets/images/projetos/pf-paiola-lava-seca-1600.webp" srcset="assets/images/projetos/pf-paiola-lava-seca-800.webp 800w, assets/images/projetos/pf-paiola-lava-seca-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="753" alt="Primeira dobra do site Paiola Lava e Seca" loading="lazy" decoding="async" draggable="false"></div>
+                        <div class="pc-cap">
+                            <a class="pc-cta" href="https://lavaeseca.refrigeracaopaiola.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Paiola Lava e Seca</span></a>
+                            <p class="pc-text"><strong class="pc-name">Paiola Lava e Seca</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.paiolalavaseca.kind">Landing page para captação de orçamentos</span></p>
+                        </div>
+                    </article>
+                    <article class="pc-slide" aria-roledescription="slide" aria-label="5 de 12: CDC Campinas">
+                        <div class="pc-media"><img src="assets/images/projetos/pf-cdc-campinas-1600.webp" srcset="assets/images/projetos/pf-cdc-campinas-800.webp 800w, assets/images/projetos/pf-cdc-campinas-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="762" alt="Primeira dobra do site CDC Campinas" loading="lazy" decoding="async" draggable="false"></div>
+                        <div class="pc-cap">
+                            <a class="pc-cta" href="https://goncalvespriscila.com.br/cdc-campinas/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — CDC Campinas</span></a>
+                            <p class="pc-text"><strong class="pc-name">CDC Campinas</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.cdccampinas.kind">Landing page de evento para profissionais da saúde</span></p>
+                        </div>
+                    </article>
+                    <article class="pc-slide" aria-roledescription="slide" aria-label="6 de 12: Trekking Capital">
+                        <div class="pc-media"><img src="assets/images/projetos/pf-trekking-1600.webp" srcset="assets/images/projetos/pf-trekking-800.webp 800w, assets/images/projetos/pf-trekking-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="708" alt="Primeira dobra do site Trekking Capital" loading="lazy" decoding="async" draggable="false"></div>
+                        <div class="pc-cap">
+                            <a class="pc-cta" href="https://trekkingcapital.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Trekking Capital</span></a>
+                            <p class="pc-text"><strong class="pc-name">Trekking Capital</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.trekkingcapital.kind">Site para assessoria em investimentos imobiliários</span></p>
+                        </div>
+                    </article>
+                    <article class="pc-slide" aria-roledescription="slide" aria-label="7 de 12: Ackermann Advogados">
+                        <div class="pc-media"><img src="assets/images/projetos/pf-ackermann-1600.webp" srcset="assets/images/projetos/pf-ackermann-800.webp 800w, assets/images/projetos/pf-ackermann-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="765" alt="Primeira dobra do site Ackermann Advogados" loading="lazy" decoding="async" draggable="false"></div>
+                        <div class="pc-cap">
+                            <a class="pc-cta" href="https://ackermannadv.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Ackermann Advogados</span></a>
+                            <p class="pc-text"><strong class="pc-name">Ackermann Advogados</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.ackermann.kind">Landing page para escritório jurídico</span></p>
+                        </div>
+                    </article>
+                    <article class="pc-slide" aria-roledescription="slide" aria-label="8 de 12: AP Soluções Humanas">
+                        <div class="pc-media"><img src="assets/images/projetos/pf-ap-solucoes-1600.webp" srcset="assets/images/projetos/pf-ap-solucoes-800.webp 800w, assets/images/projetos/pf-ap-solucoes-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="768" alt="Primeira dobra do site AP Soluções Humanas" loading="lazy" decoding="async" draggable="false"></div>
+                        <div class="pc-cap">
+                            <a class="pc-cta" href="https://apsolucoeshumanas.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — AP Soluções Humanas</span></a>
+                            <p class="pc-text"><strong class="pc-name">AP Soluções Humanas</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.apsolucoes.kind">Site institucional para consultoria de RH</span></p>
+                        </div>
+                    </article>
+                    <article class="pc-slide" aria-roledescription="slide" aria-label="9 de 12: Tubo Forte Plásticos">
+                        <div class="pc-media"><img src="assets/images/projetos/pf-tubo-forte-1600.webp" srcset="assets/images/projetos/pf-tubo-forte-800.webp 800w, assets/images/projetos/pf-tubo-forte-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="735" alt="Primeira dobra do site Tubo Forte Plásticos" loading="lazy" decoding="async" draggable="false"></div>
+                        <div class="pc-cap">
+                            <a class="pc-cta" href="https://tuboforteplasticos.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Tubo Forte Plásticos</span></a>
+                            <p class="pc-text"><strong class="pc-name">Tubo Forte Plásticos</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.tuboforte.kind">Site institucional e catálogo B2B</span></p>
+                        </div>
+                    </article>
+                    <article class="pc-slide" aria-roledescription="slide" aria-label="10 de 12: ClauMixx">
+                        <div class="pc-media"><img src="assets/images/projetos/pf-claumixx-1600.webp" srcset="assets/images/projetos/pf-claumixx-800.webp 800w, assets/images/projetos/pf-claumixx-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="705" alt="Primeira dobra do site ClauMixx" loading="lazy" decoding="async" draggable="false"></div>
+                        <div class="pc-cap">
+                            <a class="pc-cta" href="https://claumixx.com/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — ClauMixx</span></a>
+                            <p class="pc-text"><strong class="pc-name">ClauMixx</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.claumixx.kind">Landing page de vendas para lançamento de produto</span></p>
+                        </div>
+                    </article>
+                    <article class="pc-slide" aria-roledescription="slide" aria-label="11 de 12: Dra. Larissa Ramalho">
+                        <div class="pc-media"><img src="assets/images/projetos/pf-dra-larissa-1600.webp" srcset="assets/images/projetos/pf-dra-larissa-800.webp 800w, assets/images/projetos/pf-dra-larissa-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="732" alt="Primeira dobra do site Dra. Larissa Ramalho" loading="lazy" decoding="async" draggable="false"></div>
+                        <div class="pc-cap">
+                            <a class="pc-cta" href="https://dralarissaramalho.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Dra. Larissa Ramalho</span></a>
+                            <p class="pc-text"><strong class="pc-name">Dra. Larissa Ramalho</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.dralarissa.kind">Landing page para captação de pacientes</span></p>
+                        </div>
+                    </article>
+                    <article class="pc-slide" aria-roledescription="slide" aria-label="12 de 12: Blog Mundo Geopolítico">
+                        <div class="pc-media"><img src="assets/images/projetos/pf-mundo-geopolitico-blog-1600.webp" srcset="assets/images/projetos/pf-mundo-geopolitico-blog-800.webp 800w, assets/images/projetos/pf-mundo-geopolitico-blog-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="729" alt="Primeira dobra do site Blog Mundo Geopolítico" loading="lazy" decoding="async" draggable="false"></div>
+                        <div class="pc-cap">
+                            <a class="pc-cta" href="https://artigos.mundogeopolitico.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Blog Mundo Geopolítico</span></a>
+                            <p class="pc-text"><strong class="pc-name">Blog Mundo Geopolítico</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.blogmundogeo.kind">Blog com arquitetura de conteúdo para SEO</span></p>
+                        </div>
+                    </article>
+                    </div>
+                    <button class="pc-side pc-prev" type="button" aria-label="Projeto anterior"><span class="pc-chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></span></button>
+                    <button class="pc-side pc-next" type="button" aria-label="Próximo projeto"><span class="pc-chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span></button>
                 </div>
+                <div class="pc-controls">
+                    <div class="pc-dots"><button class="pc-dot" type="button" aria-label="Ver projeto 1: Ackermann Advogados · Leilões de Imóveis"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 2: Cícero Neri"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 3: Refrigeração Paiola"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 4: Paiola Lava e Seca"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 5: CDC Campinas"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 6: Trekking Capital"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 7: Ackermann Advogados"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 8: AP Soluções Humanas"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 9: Tubo Forte Plásticos"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 10: ClauMixx"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 11: Dra. Larissa Ramalho"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 12: Blog Mundo Geopolítico"><span></span></button></div>
+                    <button class="pc-play" type="button" aria-label="Pausar apresentação">
+                        <svg class="ico-pause" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+                        <svg class="ico-play" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg>
+                    </button>
+                </div>
+                <p class="pc-live pc-sr" aria-live="polite"></p>
+            </div>
+
+            <div class="container">
+                <h3 class="projects-subtitle" data-i18n="projects.automation">Automações & IA</h3>
                 <div class="project-grid">
 
-                    <!-- Projeto 1: ID22 -->
-                    <div class="project-card" data-filter="site">
-                        <img src="https://id22.com.br/wp-content/uploads/2025/11/ID22.jpg" alt="Preview do site ID22" loading="lazy">
-                        <div class="card-content">
-                            <h3>ID22 Marketing e Tecnologia</h3>
-                            <h4 data-i18n="project.id22.subtitle">Site Institucional & Plataforma de Atendimento</h4>
-                            <p data-i18n="project.id22.desc">Desenvolvimento do site institucional do zero, refletindo a identidade inovadora da agência, e implementação de um agente de atendimento virtual inteligente via WhatsApp.</p>
-                            <div class="tech-tags">
-                                <span>WordPress</span><span>HTML</span><span>CSS</span><span>n8n</span><span>Supabase</span><span>OpenAI API</span>
-                            </div>
-                            <div class="card-buttons">
-                                <a href="https://id22.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 2: Casa Nova -->
-                    <div class="project-card" data-filter="site">
-                        <img src="https://id22.com.br/wp-content/uploads/2025/11/Casa-Nova.jpg" alt="Preview do site Casa Nova" loading="lazy">
-                        <div class="card-content">
-                            <h3>Casa Nova Móveis Planejados</h3>
-                            <h4 data-i18n="project.casanova.subtitle">Portfólio Digital Interativo</h4>
-                            <p data-i18n="project.casanova.desc">Criação de uma vitrine digital elegante para uma empresa de móveis, com foco na experiência visual e uma galeria interativa customizada com HTML e CSS para exibir os projetos.</p>
-                            <div class="tech-tags">
-                                <span>WordPress</span><span>HTML</span><span>CSS</span>
-                            </div>
-                            <div class="card-buttons">
-                                <a href="https://casanovaprojetos.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 3: Mundo Geopolítico -->
-                    <div class="project-card" data-filter="site">
-                        <img src="https://id22.com.br/wp-content/uploads/2025/11/Mundo-Geopolitico.jpg" alt="Preview do site Mundo Geopolítico" loading="lazy">
-                        <div class="card-content">
-                            <h3>Mundo Geopolítico</h3>
-                            <h4 data-i18n="project.mundogeo.subtitle">Plataforma de Conteúdo & Análise</h4>
-                            <p data-i18n="project.mundogeo.desc">Gestão completa do projeto, da negociação à entrega, criando um site institucional e um blog de análises para um especialista, incluindo configuração de hospedagem e e-mails.</p>
-                            <div class="tech-tags">
-                                <span>WordPress</span><span>HTML</span><span>CSS</span><span>Hostinger</span>
-                            </div>
-                            <div class="card-buttons">
-                                <a href="https://mundogeopolitico.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 4: Blog Mundo Geopolítico -->
-                    <div class="project-card" data-filter="site">
-                        <img src="assets/images/artigos.mundo.geopolitico.img.jpg" alt="Preview do Blog Mundo Geopolítico" loading="lazy">
-                        <div class="card-content">
-                            <h3>Blog Mundo Geopolítico</h3>
-                            <h4 data-i18n="project.blogmundogeo.subtitle">Desenvolvimento de Blog Personalizado</h4>
-                            <p data-i18n="project.blogmundogeo.desc">Desenvolvimento e integração de um blog para expandir a presença digital do especialista. O foco foi na criação de uma arquitetura de conteúdo otimizada para SEO, visando atrair tráfego orgânico e estabelecer o autor como uma autoridade no nicho.</p>
-                            <div class="tech-tags">
-                                <span>WordPress</span><span>HTML</span><span>CSS</span><span>SEO</span>
-                            </div>
-                            <div class="card-buttons">
-                                <a href="https://artigos.mundogeopolitico.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 5: ClauMixx -->
-                    <div class="project-card" data-filter="lp">
-                        <img src="https://id22.com.br/wp-content/uploads/2025/11/ClauMixx.jpg" alt="Preview do site ClauMixx" loading="lazy">
-                        <div class="card-content">
-                            <h3>ClauMixx - Lançamento</h3>
-                            <h4 data-i18n="project.claumixx.subtitle">Landing Page de Vendas Diretas</h4>
-                            <p data-i18n="project.claumixx.desc">Criação de uma landing page de alta conversão para o lançamento de um produto, validando um novo canal de vendas para o cliente que gerou 7 vendas já na primeira semana.</p>
-                            <div class="tech-tags">
-                                <span>WordPress</span>
-                            </div>
-                            <div class="card-buttons">
-                                <a href="https://claumixx.com/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 6: Cícero Neri -->
-                    <div class="project-card" data-filter="lp">
-                        <img src="assets/images/lp.cicero.neri.img.jpg" alt="Preview do site Cícero Neri" loading="lazy">
-                        <div class="card-content">
-                            <h3>Cícero Neri - Consultoria de Vendas</h3>
-                            <h4 data-i18n="project.ciceroneri.subtitle">Presença Digital para Consultor de Vendas</h4>
-                            <p data-i18n="project.ciceroneri.desc">Desenvolvimento de uma landing page de captação de lead para um consultor de vendas e palestrante, focando na apresentação profissional e na criação de conteúdo relevante para o público-alvo.</p>
-                            <div class="tech-tags">
-                                <span>WordPress</span><span>HTML</span><span>CSS</span><span>SEO</span>
-                            </div>
-                            <div class="card-buttons">
-                                <a href="https://ciceroneri.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 7: Tubo Forte -->
-                    <div class="project-card" data-filter="site">
-                        <img src="assets/images/site-tubo-forte-img.jpg" alt="Preview do site Tubo Forte" loading="lazy">
-                        <div class="card-content">
-                            <h3>Tubo Forte Plásticos</h3>
-                            <h4 data-i18n="project.tuboforte.subtitle">Site Institucional & Catálogo Digital B2B</h4>
-                            <p data-i18n="project.tuboforte.desc">Desenvolvimento de um site institucional para uma empresa com mais de 20 anos de mercado, com foco em narrar sua história e destacar seus valores de inovação e sustentabilidade. Projeto concebido do zero, desde o design minimalista até a criação de um canal no YouTube para integrar vídeos da empresa.</p>
-                            <div class="tech-tags">
-                                <span>WordPress</span><span>HTML</span><span>CSS</span><span>SEO</span><span>Design UI/UX</span>
-                            </div>
-                            <div class="card-buttons">
-                                <a href="https://tuboforteplasticos.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 8: Dra. Larissa Ramalho -->
-                    <div class="project-card" data-filter="lp">
-                        <img src="assets/images/lp-dra-larissa-img.jpg" alt="Preview do Landing Page Dra. Larissa Ramalho" loading="lazy">
-                        <div class="card-content">
-                            <h3>Dra. Larissa Ramalho</h3>
-                            <h4 data-i18n="project.dralarissa.subtitle">Landing Page para Captação de Leads</h4>
-                            <p data-i18n="project.dralarissa.desc">Criação de uma landing page estratégica para uma médica em início de carreira, projetada para construir autoridade e captar novos pacientes. Desenvolvi do design à entrega, aplicando um estilo minimalista e informativo, resultando em maior visibilidade e aquisição de clientes.</p>
-                            <div class="tech-tags">
-                                <span>WordPress</span><span>HTML</span><span>CSS</span><span>SEO</span><span>Lead Gen</span>
-                            </div>
-                            <div class="card-buttons">
-                                <a href="https://dralarissaramalho.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 9: AP Soluções Humanas -->
-                    <div class="project-card" data-filter="site">
-                        <img src="assets/images/site.ap.solucoes.hamanas.png" alt="Preview do site AP Soluções Humanas" loading="lazy">
-                        <div class="card-content">
-                            <h3>AP Soluções Humanas</h3>
-                            <h4 data-i18n="project.apsolucoes.subtitle">Site Institucional & Plataforma de Serviços</h4>
-                            <p data-i18n="project.apsolucoes.desc">Desenvolvimento de diversas páginas web e implementação de uma solução de automação customizada e sem plugins para o site da AP Soluções Humanas, otimizando a experiência do usuário e processos críticos da cliente.</p>
-                            <div class="tech-tags">
-                                <span>WordPress</span><span>HTML</span><span>CSS</span><span>Formulários</span><span>Automações</span>
-                            </div>
-                            <div class="card-buttons">
-                                <a href="https://id22.com.br/home-apsolucoes/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 15: V.O Custom Painting -->
-                    <div class="project-card" data-filter="lp">
-                        <img src="https://id22.com.br/wp-content/uploads/2026/05/VO-Custom.jpg" alt="Preview do site V.O Custom Painting" loading="lazy">
-                        <div class="card-content">
-                            <h3>V.O Custom Painting</h3>
-                            <h4 data-i18n="project.vocustom.subtitle">Landing Page para Empresa de Pintura</h4>
-                            <p data-i18n="project.vocustom.desc">Desenvolvimento de landing page para empresa de pintura profissional em Dublin, com slider interativo de antes e depois, foco em conversão via WhatsApp, design responsivo e depoimentos para construção de autoridade local.</p>
-                            <div class="tech-tags">
-                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Design UI/UX</span><span>SEO</span>
-                            </div>
-                            <div class="card-buttons">
-                                <a href="https://vocustompainting.com/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 12: Trekking Capital -->
-                    <div class="project-card" data-filter="site">
-                        <img src="https://id22.com.br/wp-content/uploads/2026/05/Trekking-Capital.jpg" alt="Preview do site Trekking Capital" loading="lazy">
-                        <div class="card-content">
-                            <h3>Trekking Capital</h3>
-                            <h4 data-i18n="project.trekkingcapital.subtitle">Assessoria em Investimentos Imobiliários</h4>
-                            <p data-i18n="project.trekkingcapital.desc">Desenvolvimento completo da interface institucional, com responsividade mobile, gráfico interativo de retorno de investimento com dados de 30 anos, seção de diagnóstico de dores do cliente e configuração de SEO e Open Graph para compartilhamento em redes sociais.</p>
-                            <div class="tech-tags">
-                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Chart.js</span><span>Hostinger</span><span>GitHub</span><span>Design UI/UX</span><span>SEO</span>
-                            </div>
-                            <div class="card-buttons">
-                                <a href="https://trekkingcapital.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 13: Ackermann Advogados -->
-                    <div class="project-card" data-filter="lp">
-                        <img src="https://id22.com.br/wp-content/uploads/2026/05/Ackemann-Advogados.jpg" alt="Preview do site Ackermann Advogados" loading="lazy">
-                        <div class="card-content">
-                            <h3>Ackermann Advogados</h3>
-                            <h4 data-i18n="project.ackermann.subtitle">Landing Page para Escritório Jurídico</h4>
-                            <p data-i18n="project.ackermann.desc">Desenvolvimento de landing page institucional para escritório especializado em assessoria jurídica para leilões de imóveis, com foco em conversão via formulário de pré-qualificação e WhatsApp.</p>
-                            <div class="tech-tags">
-                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span><span>Design UI/UX</span><span>SEO</span>
-                            </div>
-                            <div class="card-buttons">
-                                <a href="https://matdev96.github.io/ackermann-advogados/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 14: Refrigeração Paiola -->
-                    <div class="project-card" data-filter="site">
-                        <img src="https://id22.com.br/wp-content/uploads/2026/05/Refrigeracao-Paiola.jpg" alt="Preview do site Refrigeração Paiola" loading="lazy">
-                        <div class="card-content">
-                            <h3>Refrigeração Paiola</h3>
-                            <h4 data-i18n="project.paiola.subtitle">Site Institucional para Assistência Técnica</h4>
-                            <p data-i18n="project.paiola.desc">Desenvolvimento de site institucional para assistência técnica em refrigeração na região do ABC, destacando serviços de lava-seca, ar-condicionado e refrigeradores, com captação de clientes via orçamento por WhatsApp e chamada direta.</p>
-                            <div class="tech-tags">
-                                <span>WordPress</span><span>Elementor</span><span>HTML</span><span>CSS</span><span>Design UI/UX</span><span>SEO</span>
-                            </div>
-                            <div class="card-buttons">
-                                <a href="https://refrigeracaopaiola.com.br/" target="_blank" class="btn-card"><i class="fa-solid fa-eye"></i> <span data-i18n="btn.live">Ver ao Vivo</span></a>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Projeto 10: Agente BNI 1ª Versão -->
-                    <div class="project-card" data-filter="automation">
+                    <div class="project-card">
                         <img src="assets/images/Agente-BNI-Atendimento.jpg" alt="Preview da automação Agente de Atendimento BNI" loading="lazy">
                         <div class="card-content">
                             <h3>Agente de Atendimento BNI - 1ª Versão</h3>
@@ -370,7 +265,7 @@
                     </div>
 
                     <!-- Projeto 11: Agente BNI 2ª Versão -->
-                    <div class="project-card" data-filter="automation">
+                    <div class="project-card">
                         <img src="assets/images/Agente-BNI2-Atendimento.jpg" alt="Preview da automação Agente de Atendimento BNI 2ª Versão" loading="lazy">
                         <div class="card-content">
                             <h3>Agente de Atendimento BNI - 2ª Versão</h3>
@@ -431,7 +326,7 @@
     <footer>
         <div class="container">
             <a href="#" class="logo-footer">&lt;MDS/&gt;</a>
-            <p data-i18n="footer.rights">© 2025 Matheus Dias de Souza. Todos os direitos reservados.</p>
+            <p data-i18n="footer.rights">© 2026 Matheus Dias de Souza. Todos os direitos reservados.</p>
         </div>
     </footer>
 
