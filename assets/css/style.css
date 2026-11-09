@@ -205,15 +205,80 @@ header nav a:hover {
     max-width: 450px;
 }
 
-.hero-image img {
+/* Ilustração do hero (SVG animado) */
+.hero-art {
+    display: block;
     width: 100%;
-    animation: floatAnimation 5s ease-in-out infinite;
+    height: auto;
+    overflow: visible;
 }
 
-@keyframes floatAnimation {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0); }
+.hero-art text { font-family: var(--font-body); }
+.hero-art .ha-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.hero-art .ha-num { font-size: 10px; fill: #6B705C; }
+.hero-art .ha-file { font-size: 10px; fill: #DCD3C4; }
+.hero-art .ha-ok { font-size: 14px; font-weight: 700; fill: var(--quase-preto); }
+.hero-art .ha-tag { font-size: 16px; font-weight: 700; fill: var(--off-white); }
+.hero-art .ha-label { font-size: 10px; font-weight: 700; letter-spacing: .14em; fill: var(--verde-militar); }
+.hero-art .ha-cap { font-size: 9.5px; font-weight: 600; fill: #555; text-anchor: middle; }
+
+/* cada camada flutua num ritmo diferente, para dar profundidade */
+.ha-float { animation: haFloat 6s ease-in-out infinite; }
+.ha-d2 { animation-duration: 7s; animation-delay: -2s; }
+.ha-d3 { animation-duration: 6.5s; animation-delay: -4s; }
+.ha-d4 { animation-duration: 5s; animation-delay: -1s; }
+.ha-d5 { animation-duration: 5.5s; animation-delay: -3s; }
+
+@keyframes haFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* linhas de código sendo "digitadas" em sequência */
+.ha-line {
+    transform-box: fill-box;
+    transform-origin: left center;
+    animation: haType 9s ease-out infinite both;
+    animation-delay: calc(var(--i) * .35s);
+}
+
+@keyframes haType {
+    0% { transform: scaleX(0); opacity: 1; }
+    8% { transform: scaleX(1); }
+    86% { transform: scaleX(1); opacity: 1; }
+    94%, 100% { transform: scaleX(1); opacity: 0; }
+}
+
+.ha-cursor { animation: haBlink 1s steps(1) infinite; }
+@keyframes haBlink { 50% { opacity: 0; } }
+
+/* dados "fluindo" entre os nós do workflow */
+.ha-flow { animation: haFlow .9s linear infinite; }
+@keyframes haFlow { to { stroke-dashoffset: -8; } }
+
+.ha-ring {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: haRing 2s ease-out infinite;
+}
+@keyframes haRing {
+    from { transform: scale(1); opacity: .7; }
+    to { transform: scale(2.6); opacity: 0; }
+}
+
+.ha-bar {
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+    animation: haBar 3.2s ease-in-out infinite;
+    animation-delay: calc(var(--i) * -.7s);
+}
+@keyframes haBar {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(.6); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-art * { animation: none !important; }
 }
 
 .btn {
@@ -454,7 +519,9 @@ header nav a:hover {
 }
 
 .about-image img {
+    display: block;
     width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
@@ -580,6 +647,11 @@ footer p {
 
     .hero-text {
         max-width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 420px;
     }
 
     .hero-availability {
