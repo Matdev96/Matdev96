@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matheus Dias de Souza — Full-Stack Developer & AI Automation Engineer</title>
+    <title>Matheus Dias de Souza — Full-Stack Developer</title>
 
     <!-- SEO -->
-    <meta name="description" content="Matheus Dias de Souza — Full-Stack Developer & AI Automation Engineer based in Dublin, Ireland. Portfolio of web projects, landing pages and AI automation solutions.">
+    <meta name="description" content="Matheus Dias de Souza, full-stack developer in Dublin, Ireland. Web applications, websites and AI automations, from the database to deployment.">
     <meta name="author" content="Matheus Dias de Souza">
+    <meta name="theme-color" content="#2c0d10">
     <link rel="canonical" href="https://matdev96.github.io/Matdev96/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://matdev96.github.io/Matdev96/">
-    <meta property="og:title" content="Matheus Dias de Souza — Full-Stack Developer & AI Automation Engineer">
-    <meta property="og:description" content="Full-Stack Developer & AI Automation Engineer based in Dublin, Ireland. Web projects, landing pages and AI automation solutions.">
+    <meta property="og:title" content="Matheus Dias de Souza — Full-Stack Developer">
+    <meta property="og:description" content="Full-stack developer in Dublin, Ireland. Web applications, websites and AI automations, from the database to deployment.">
     <meta property="og:image" content="https://matdev96.github.io/Matdev96/assets/images/og-matheus-dias-de-souza.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -22,407 +23,302 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Matheus Dias de Souza — Full-Stack Developer">
-    <meta name="twitter:description" content="Full-Stack Developer & AI Automation Engineer based in Dublin, Ireland.">
+    <meta name="twitter:description" content="Full-stack developer in Dublin, Ireland. Web applications, websites and AI automations.">
     <meta name="twitter:image" content="https://matdev96.github.io/Matdev96/assets/images/og-matheus-dias-de-souza.jpg">
 
     <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%236B705C'/><text x='50%25' y='56%25' font-family='monospace' font-weight='bold' font-size='13' fill='%23F9F9F9' text-anchor='middle' dominant-baseline='middle'>MDS</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232c0d10'/><text x='50%25' y='56%25' font-family='monospace' font-weight='bold' font-size='12' fill='%23a8e6cf' text-anchor='middle' dominant-baseline='middle'>MDS</text></svg>">
 
-    <!-- Fontes do Google -->
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Ícones (Font Awesome) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="assets/css/tokens.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/portfolio-carrossel.css">
     <script src="assets/js/script.js" defer></script>
-    <script src="assets/js/portfolio-carrossel.js" defer></script>
 </head>
 <body>
+    <a class="skip" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
 
     <!-- CABEÇALHO -->
-    <header>
-        <div class="container header-container">
-            <a href="#" class="logo">&lt;MDS/&gt;</a>
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
-                    <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
-                    <li><a href="#about" data-i18n="nav.about">Sobre Mim</a></li>
-                    <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
-                </ul>
-                <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+    <header class="site-header">
+        <div class="wrap">
+            <a href="#topo" class="mds-wordmark" aria-label="Matheus Dias de Souza"><b>&lt;</b>MDS<b>/&gt;</b></a>
+            <nav class="nav" id="main-nav" aria-label="Principal">
+                <a href="#destaque">Sistema ID22</a>
+                <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+                <a href="#sobre" data-i18n="nav.about">Sobre</a>
+                <a href="#contato" data-i18n="nav.contact">Contato</a>
             </nav>
-            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
+            <div class="header-actions">
+                <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Switch to English">EN</button>
+                <a class="mds-btn mds-btn--secondary mds-btn--sm" href="CV — Matheus Dias de Souza.pdf" download data-i18n="cta.cv">Baixar CV</a>
+                <button type="button" class="menu-toggle" id="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                </button>
+            </div>
         </div>
     </header>
 
-    <main>
-        <!-- SEÇÃO INICIAL (HERO) -->
-        <section id="home">
-            <div class="container home-container">
+    <main id="conteudo">
 
-                <div class="hero-text">
-                    <h1>Matheus Dias de Souza</h1>
-                    <p class="hero-location"><i class="fa-solid fa-location-dot"></i> <span data-i18n="hero.location">Dublin, Ireland</span></p>
-                    <p class="hero-availability"><span class="availability-dot"></span><span data-i18n="hero.availability">Disponível · Remoto (BR & Global) · Presencial em Dublin / Europa</span></p>
-                    <p class="subtitle" data-i18n="hero.subtitle">Desenvolvedor Web especializado em criar soluções digitais robustas e elegantes.</p>
-                    <div class="cta-buttons">
-                        <a href="#projects" class="btn btn-primary" data-i18n="hero.cta.primary">Veja meus projetos</a>
-                        <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta.secondary">Entre em contato</a>
-                        <a href="CV — Matheus Dias de Souza.pdf" download class="btn btn-cv" data-i18n="hero.cta.cv"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
-                    </div>
+        <!-- HERO -->
+        <section id="topo" class="wrap hero">
+            <div class="hero__text">
+                <span class="mds-label" data-i18n="hero.eyebrow">// desenvolvedor full-stack · dublin, irlanda</span>
+                <h1 class="hero__name">Matheus Dias de Souza</h1>
+                <p class="hero__lead"><span data-i18n="hero.lead">Construo aplicações web, sites e automações com IA,</span> <strong data-i18n="hero.lead.strong">do banco de dados ao deploy.</strong></p>
+                <div class="hero__row">
+                    <span class="mds-status" data-i18n="hero.status1">Disponível · Dublin</span>
+                    <span class="mds-status" data-i18n="hero.status2">Remoto ou presencial</span>
                 </div>
-
-                <div class="hero-image">
-                    <!-- Ilustração original em SVG: site, editor de código e fluxo de automação -->
-                    <svg class="hero-art" viewBox="0 0 512 460" width="512" height="460" role="img" aria-labelledby="hero-art-title" xmlns="http://www.w3.org/2000/svg">
-                        <title id="hero-art-title">Ilustração de um site, um editor de código e um fluxo de automação com IA</title>
-                        <defs>
-                            <filter id="ha-shadow" x="-20%" y="-20%" width="140%" height="160%">
-                                <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#1a1a1a" flood-opacity=".14"/>
-                            </filter>
-                            <pattern id="ha-dots" width="14" height="14" patternUnits="userSpaceOnUse">
-                                <circle cx="2" cy="2" r="1.6" fill="#6B705C" opacity=".35"/>
-                            </pattern>
-                        </defs>
-
-                        <!-- fundo -->
-                        <circle cx="290" cy="236" r="200" fill="#DCD3C4" opacity=".55"/>
-                        <circle cx="440" cy="300" r="44" fill="#CB997E" opacity=".22"/>
-                        <rect x="20" y="22" width="126" height="84" fill="url(#ha-dots)"/>
-
-                        <!-- janela do site -->
-                        <g transform="translate(150 36)"><g class="ha-float ha-d1">
-                            <rect width="330" height="236" rx="16" fill="#F9F9F9" filter="url(#ha-shadow)"/>
-                            <path d="M16 0H314a16 16 0 0 1 16 16V34H0V16A16 16 0 0 1 16 0Z" fill="#ECE7DF"/>
-                            <circle cx="20" cy="17" r="5" fill="#CB997E"/><circle cx="36" cy="17" r="5" fill="#DDBEA9"/><circle cx="52" cy="17" r="5" fill="#A5A58D"/>
-                            <rect x="76" y="9" width="180" height="16" rx="8" fill="#F9F9F9"/>
-                            <rect x="20" y="52" width="290" height="70" rx="10" fill="#6B705C"/>
-                            <rect x="36" y="69" width="120" height="10" rx="5" fill="#F9F9F9" opacity=".92"/>
-                            <rect x="36" y="87" width="84" height="8" rx="4" fill="#DCD3C4"/>
-                            <rect x="36" y="103" width="46" height="11" rx="5.5" fill="#CB997E"/>
-                            <circle cx="268" cy="87" r="22" fill="#A5A58D"/>
-                            <circle cx="268" cy="87" r="10" fill="#F9F9F9" opacity=".5"/>
-                            <rect x="20" y="136" width="88" height="80" rx="9" fill="#F1ECE4"/>
-                            <rect x="30" y="148" width="16" height="16" rx="5" fill="#6B705C"/>
-                            <rect x="30" y="176" width="62" height="6" rx="3" fill="#CFC6B6"/><rect x="30" y="189" width="44" height="6" rx="3" fill="#CFC6B6"/>
-                            <rect x="121" y="136" width="88" height="80" rx="9" fill="#F1ECE4"/>
-                            <rect x="131" y="148" width="16" height="16" rx="5" fill="#CB997E"/>
-                            <rect x="131" y="176" width="62" height="6" rx="3" fill="#CFC6B6"/><rect x="131" y="189" width="44" height="6" rx="3" fill="#CFC6B6"/>
-                            <rect x="222" y="136" width="88" height="80" rx="9" fill="#F1ECE4"/>
-                            <rect class="ha-bar" style="--i:0" x="234" y="182" width="12" height="22" rx="3" fill="#A5A58D"/>
-                            <rect class="ha-bar" style="--i:1" x="252" y="168" width="12" height="36" rx="3" fill="#6B705C"/>
-                            <rect class="ha-bar" style="--i:2" x="270" y="176" width="12" height="28" rx="3" fill="#A5A58D"/>
-                            <rect class="ha-bar" style="--i:3" x="288" y="156" width="12" height="48" rx="3" fill="#6B705C"/>
-                        </g></g>
-
-                        <!-- editor de código -->
-                        <g transform="translate(28 176)"><g class="ha-float ha-d2">
-                            <rect width="292" height="206" rx="16" fill="#23241F" filter="url(#ha-shadow)"/>
-                            <circle cx="20" cy="18" r="5" fill="#CB997E"/><circle cx="36" cy="18" r="5" fill="#DDBEA9"/><circle cx="52" cy="18" r="5" fill="#A5A58D"/>
-                            <rect x="70" y="9" width="92" height="18" rx="6" fill="#34362E"/>
-                            <text x="82" y="22" class="ha-mono ha-file">app.tsx</text>
-                            <text x="18" y="54" class="ha-mono ha-num">1</text><text x="18" y="74" class="ha-mono ha-num">2</text><text x="18" y="94" class="ha-mono ha-num">3</text><text x="18" y="114" class="ha-mono ha-num">4</text><text x="18" y="134" class="ha-mono ha-num">5</text><text x="18" y="154" class="ha-mono ha-num">6</text><text x="18" y="174" class="ha-mono ha-num">7</text>
-                            <g class="ha-line" style="--i:0"><rect x="40" y="47" width="34" height="8" rx="4" fill="#CB997E"/><rect x="80" y="47" width="60" height="8" rx="4" fill="#DDBEA9"/><rect x="146" y="47" width="40" height="8" rx="4" fill="#A5A58D"/></g>
-                            <g class="ha-line" style="--i:1"><rect x="40" y="67" width="52" height="8" rx="4" fill="#CB997E"/><rect x="98" y="67" width="90" height="8" rx="4" fill="#F1ECE4" opacity=".85"/></g>
-                            <g class="ha-line" style="--i:2"><rect x="56" y="87" width="40" height="8" rx="4" fill="#A5A58D"/><rect x="102" y="87" width="70" height="8" rx="4" fill="#DDBEA9"/></g>
-                            <g class="ha-line" style="--i:3"><rect x="56" y="107" width="28" height="8" rx="4" fill="#CB997E"/><rect x="90" y="107" width="110" height="8" rx="4" fill="#A5A58D"/></g>
-                            <g class="ha-line" style="--i:4"><rect x="72" y="127" width="86" height="8" rx="4" fill="#F1ECE4" opacity=".85"/><rect x="164" y="127" width="40" height="8" rx="4" fill="#DDBEA9"/></g>
-                            <g class="ha-line" style="--i:5"><rect x="56" y="147" width="20" height="8" rx="4" fill="#DDBEA9"/></g>
-                            <g class="ha-line" style="--i:6"><rect x="40" y="167" width="14" height="8" rx="4" fill="#A5A58D"/></g>
-                            <rect class="ha-cursor" x="60" y="164" width="7" height="14" rx="1.5" fill="#F9F9F9"/>
-                        </g></g>
-
-                        <!-- fluxo de automação -->
-                        <g transform="translate(298 300)"><g class="ha-float ha-d3">
-                            <rect width="196" height="128" rx="16" fill="#F9F9F9" filter="url(#ha-shadow)"/>
-                            <text x="16" y="27" class="ha-label">WORKFLOW</text>
-                            <circle class="ha-ring" cx="178" cy="23" r="4" fill="none" stroke="#4caf50" stroke-width="2"/>
-                            <circle cx="178" cy="23" r="4" fill="#4caf50"/>
-                            <path class="ha-flow" d="M54 70H80M116 70H142" stroke="#6B705C" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
-                            <rect x="18" y="52" width="36" height="36" rx="10" fill="#6B705C"/>
-                            <path transform="translate(36 70)" d="M2 -10L-7 2H0L-2 10L7 -2H0Z" fill="#F9F9F9"/>
-                            <rect x="80" y="52" width="36" height="36" rx="10" fill="#CB997E"/>
-                            <path transform="translate(98 70) scale(.85)" d="M0 -10C1 -3 3 -1 10 0C3 1 1 3 0 10C-1 3 -3 1 -10 0C-3 -1 -1 -3 0 -10Z" fill="#F9F9F9"/>
-                            <rect x="142" y="52" width="36" height="36" rx="10" fill="#A5A58D"/>
-                            <path transform="translate(160 70)" d="M-8 -7H8a2 2 0 0 1 2 2V3a2 2 0 0 1-2 2H-1L-5 9V5H-8a2 2 0 0 1-2-2V-5a2 2 0 0 1 2-2Z" fill="#F9F9F9"/>
-                            <text x="36" y="108" class="ha-cap">webhook</text>
-                            <text x="98" y="108" class="ha-cap">LLM</text>
-                            <text x="160" y="108" class="ha-cap">WhatsApp</text>
-                        </g></g>
-
-                        <!-- selo "200 OK" -->
-                        <g transform="translate(18 112)"><g class="ha-float ha-d4">
-                            <rect width="118" height="42" rx="21" fill="#F9F9F9" filter="url(#ha-shadow)"/>
-                            <circle cx="22" cy="21" r="10" fill="#4caf50"/>
-                            <path d="M17.5 21.5l3 3 5.5-6.5" fill="none" stroke="#F9F9F9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <text x="41" y="26" class="ha-mono ha-ok">200 OK</text>
-                        </g></g>
-
-                        <!-- selo de código -->
-                        <g transform="translate(456 34)"><g class="ha-float ha-d5">
-                            <circle r="28" fill="#6B705C" filter="url(#ha-shadow)"/>
-                            <text y="5" text-anchor="middle" class="ha-mono ha-tag">&lt;/&gt;</text>
-                        </g></g>
-                    </svg>
+                <div class="hero__actions">
+                    <a class="mds-btn mds-btn--primary" href="#projetos" data-i18n="cta.projects">Ver projetos</a>
+                    <a class="mds-btn mds-btn--secondary" href="#destaque" data-i18n="cta.case">Ler o case Sistema ID22</a>
                 </div>
+            </div>
+            <figure class="hero__photo">
+                <img src="assets/images/matheus-dias-de-souza.webp" width="800" height="1000" alt="Foto de Matheus Dias de Souza" fetchpriority="high">
+                <figcaption class="mds-label">53.35° N · 6.26° W</figcaption>
+            </figure>
+        </section>
 
+        <!-- STACK -->
+        <section class="stack" aria-labelledby="stack-titulo">
+            <div class="wrap">
+                <h2 class="mds-label" id="stack-titulo" style="margin: 0;" data-i18n="stack.title">Stack do dia a dia</h2>
+                <ul class="mds-tags">
+                    <li class="mds-tag mds-tag--active">Next.js</li>
+                    <li class="mds-tag">React</li>
+                    <li class="mds-tag">TypeScript</li>
+                    <li class="mds-tag">Python</li>
+                    <li class="mds-tag">FastAPI</li>
+                    <li class="mds-tag">PostgreSQL</li>
+                    <li class="mds-tag">Supabase</li>
+                    <li class="mds-tag">n8n</li>
+                    <li class="mds-tag">OpenAI API</li>
+                    <li class="mds-tag">Docker</li>
+                </ul>
             </div>
         </section>
 
-        <!-- SEÇÃO DE SKILLS -->
-        <section id="skills">
-            <div class="container">
-                <h2 data-i18n="skills.title">Skills</h2>
-                <div class="skills-grid">
-
-                    <div class="skill-category">
-                        <h3 data-i18n="skills.frontend">Frontend</h3>
-                        <div class="skill-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>React</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3 data-i18n="skills.backend">Backend & Infra</h3>
-                        <div class="skill-tags">
-                            <span>Python</span>
-                            <span>FastAPI</span>
-                            <span>PostgreSQL</span>
-                            <span>Supabase</span>
-                            <span>Node.js</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3 data-i18n="skills.ai">IA & Automação</h3>
-                        <div class="skill-tags">
-                            <span>n8n</span>
-                            <span>OpenAI API</span>
-                            <span>AI Agents</span>
-                            <span>Evolution API</span>
-                            <span>Prompt Engineering</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3 data-i18n="skills.tools">Ferramentas</h3>
-                        <div class="skill-tags">
-                            <span>WordPress</span>
-                            <span>Elementor</span>
-                            <span>Git</span>
-                            <span>SEO</span>
-                            <span>Email Marketing</span>
-                        </div>
-                    </div>
-
+        <!-- DESTAQUE: SISTEMA ID22 -->
+        <section id="destaque" class="wrap section" aria-labelledby="case-titulo">
+            <div class="case">
+                <div class="case__text">
+                    <span class="mds-label" data-i18n="case.eyebrow">Projeto em destaque · ID22 Marketing &amp; Tecnologia</span>
+                    <h2 class="case__title" id="case-titulo">Sistema ID22</h2>
+                    <p class="case__lead" data-i18n="case.lead">A agência controlava clientes, domínios e contratos em uma planilha. Transformei isso em uma plataforma interna que verifica se cada site está no ar, avisa antes de um domínio vencer e manda o alerta direto no WhatsApp.</p>
+                    <p class="case__more" data-i18n="case.more">Depois vieram login próprio, página de equipe e controle de ponto. Hoje o sistema está virando o ERP da agência, com um módulo de cadastro de clientes que alimenta os outros.</p>
+                    <dl class="stats">
+                        <div class="stat"><dt data-i18n="case.stat1">sites monitorados</dt><dd>28</dd></div>
+                        <div class="stat"><dt data-i18n="case.stat2">verificações: uptime e domínio</dt><dd>2</dd></div>
+                        <div class="stat"><dt data-i18n="case.stat3">módulos no ar: login, equipe, ponto</dt><dd>3</dd></div>
+                    </dl>
+                    <ul class="mds-tags" aria-label="Stack">
+                        <li class="mds-tag mds-tag--active">Next.js</li>
+                        <li class="mds-tag">Supabase</li>
+                        <li class="mds-tag">n8n</li>
+                        <li class="mds-tag">Evolution API</li>
+                        <li class="mds-tag">Docker</li>
+                        <li class="mds-tag">EasyPanel</li>
+                    </ul>
+                    <p class="mds-label case__note" data-i18n="case.note">Código privado da agência · demonstração sob pedido</p>
                 </div>
+                <ol class="flow" aria-label="Sistema ID22">
+                    <li><span class="mds-label" data-i18n="flow.1.label">antes</span><strong data-i18n="flow.1.title">Planilha Google</strong><span data-i18n="flow.1.text">clientes, domínios e contratos à mão</span></li>
+                    <li><span class="mds-label">n8n</span><strong>UptimeRobot + RDAP</strong><span data-i18n="flow.2.text">site no ar? domínio vence quando?</span></li>
+                    <li><span class="mds-label">supabase + next.js</span><strong>sistema.id22.com.br</strong><span data-i18n="flow.3.text">painel com login, equipe e ponto</span></li>
+                    <li><span class="mds-label">evolution api</span><strong data-i18n="flow.4.title">Alerta no WhatsApp</strong><span data-i18n="flow.4.text">o time sabe antes do cliente</span></li>
+                </ol>
             </div>
         </section>
 
-        <!-- SEÇÃO DE PROJETOS -->
-        <section id="projects">
-            <div class="container">
-                <h2 data-i18n="projects.title">Meus Projetos</h2>
-                <p class="projects-lead" data-i18n="projects.lead">Sites institucionais e landing pages que desenvolvi do design ao deploy. Arraste para o lado ou use as setas para conhecer cada projeto.</p>
+        <!-- PROJETOS -->
+        <section id="projetos" class="wrap section" aria-labelledby="projetos-titulo">
+            <div class="section-head">
+                <span class="mds-label" data-i18n="projects.eyebrow">// sites e landing pages</span>
+                <h2 class="h2" id="projetos-titulo" data-i18n="projects.title">Do design ao deploy</h2>
             </div>
-
-            <!-- Carrossel de sites (mesmo modelo do portfólio da ID22) -->
-            <div id="portfolio-carrossel" role="region" aria-roledescription="carrossel" aria-label="Sites e landing pages" data-autoplay="true">
-                <div class="pc-stage">
-                    <div class="pc-track">
-                    <article class="pc-slide" aria-roledescription="slide" aria-label="1 de 12: Ackermann Advogados · Leilões de Imóveis">
-                        <div class="pc-media"><img src="assets/images/projetos/pf-ackermann-leiloes-1600.webp" srcset="assets/images/projetos/pf-ackermann-leiloes-800.webp 800w, assets/images/projetos/pf-ackermann-leiloes-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="763" alt="Primeira dobra do site Ackermann Advogados · Leilões de Imóveis" loading="lazy" decoding="async" draggable="false"></div>
-                        <div class="pc-cap">
-                            <a class="pc-cta" href="https://ackermannadv.com.br/version_02/contract/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Ackermann Advogados · Leilões de Imóveis</span></a>
-                            <p class="pc-text"><strong class="pc-name">Ackermann Advogados · Leilões de Imóveis</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.ackermannleiloes.kind">Landing page editorial</span></p>
+            <div class="projects-grid" id="projects-grid">
+                    <article class="mds-project">
+                        <div class="mds-project__shot"><img src="assets/images/projetos/pf-cicero-neri-800.webp" srcset="assets/images/projetos/pf-cicero-neri-800.webp 800w, assets/images/projetos/pf-cicero-neri-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 380px" width="800" height="500" alt="Primeira dobra do site Cícero Neri" loading="lazy" decoding="async"></div>
+                        <div class="mds-project__meta">
+                            <span class="mds-label" data-i18n="p.ciceroneri.label">Landing page</span>
+                            <h3 class="mds-project__name">Cícero Neri</h3>
+                            <p class="mds-project__kind" data-i18n="p.ciceroneri.kind">Landing page para consultoria comercial.</p>
                         </div>
+                        <div class="mds-project__actions"><a class="mds-btn mds-btn--secondary mds-btn--sm" href="https://ciceroneri.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao vivo</span><span class="sr-only"> — Cícero Neri</span></a></div>
                     </article>
-                    <article class="pc-slide" aria-roledescription="slide" aria-label="2 de 12: Cícero Neri">
-                        <div class="pc-media"><img src="assets/images/projetos/pf-cicero-neri-1600.webp" srcset="assets/images/projetos/pf-cicero-neri-800.webp 800w, assets/images/projetos/pf-cicero-neri-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="819" alt="Primeira dobra do site Cícero Neri" loading="lazy" decoding="async" draggable="false"></div>
-                        <div class="pc-cap">
-                            <a class="pc-cta" href="https://ciceroneri.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Cícero Neri</span></a>
-                            <p class="pc-text"><strong class="pc-name">Cícero Neri</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.ciceroneri.kind">Landing page para consultoria comercial</span></p>
+                    <article class="mds-project">
+                        <div class="mds-project__shot"><img src="assets/images/projetos/pf-paiola-800.webp" srcset="assets/images/projetos/pf-paiola-800.webp 800w, assets/images/projetos/pf-paiola-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 380px" width="800" height="500" alt="Primeira dobra do site Refrigeração Paiola" loading="lazy" decoding="async"></div>
+                        <div class="mds-project__meta">
+                            <span class="mds-label" data-i18n="p.paiola.label">Site institucional</span>
+                            <h3 class="mds-project__name">Refrigeração Paiola</h3>
+                            <p class="mds-project__kind" data-i18n="p.paiola.kind">Site para assistência técnica, com orçamento pelo WhatsApp.</p>
                         </div>
+                        <div class="mds-project__actions"><a class="mds-btn mds-btn--secondary mds-btn--sm" href="https://refrigeracaopaiola.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao vivo</span><span class="sr-only"> — Refrigeração Paiola</span></a></div>
                     </article>
-                    <article class="pc-slide" aria-roledescription="slide" aria-label="3 de 12: Refrigeração Paiola">
-                        <div class="pc-media"><img src="assets/images/projetos/pf-paiola-1600.webp" srcset="assets/images/projetos/pf-paiola-800.webp 800w, assets/images/projetos/pf-paiola-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="762" alt="Primeira dobra do site Refrigeração Paiola" loading="lazy" decoding="async" draggable="false"></div>
-                        <div class="pc-cap">
-                            <a class="pc-cta" href="https://refrigeracaopaiola.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Refrigeração Paiola</span></a>
-                            <p class="pc-text"><strong class="pc-name">Refrigeração Paiola</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.paiola.kind">Site institucional para assistência técnica</span></p>
+                    <article class="mds-project">
+                        <div class="mds-project__shot"><img src="assets/images/projetos/pf-ackermann-leiloes-800.webp" srcset="assets/images/projetos/pf-ackermann-leiloes-800.webp 800w, assets/images/projetos/pf-ackermann-leiloes-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 380px" width="800" height="500" alt="Primeira dobra do site Ackermann · Leilões" loading="lazy" decoding="async"></div>
+                        <div class="mds-project__meta">
+                            <span class="mds-label" data-i18n="p.ackleiloes.label">Landing page editorial</span>
+                            <h3 class="mds-project__name">Ackermann · Leilões</h3>
+                            <p class="mds-project__kind" data-i18n="p.ackleiloes.kind">Assessoria jurídica em leilões de imóveis.</p>
                         </div>
+                        <div class="mds-project__actions"><a class="mds-btn mds-btn--secondary mds-btn--sm" href="https://ackermannadv.com.br/version_02/contract/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao vivo</span><span class="sr-only"> — Ackermann · Leilões</span></a></div>
                     </article>
-                    <article class="pc-slide" aria-roledescription="slide" aria-label="4 de 12: Paiola Lava e Seca">
-                        <div class="pc-media"><img src="assets/images/projetos/pf-paiola-lava-seca-1600.webp" srcset="assets/images/projetos/pf-paiola-lava-seca-800.webp 800w, assets/images/projetos/pf-paiola-lava-seca-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="753" alt="Primeira dobra do site Paiola Lava e Seca" loading="lazy" decoding="async" draggable="false"></div>
-                        <div class="pc-cap">
-                            <a class="pc-cta" href="https://lavaeseca.refrigeracaopaiola.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Paiola Lava e Seca</span></a>
-                            <p class="pc-text"><strong class="pc-name">Paiola Lava e Seca</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.paiolalavaseca.kind">Landing page para captação de orçamentos</span></p>
+                    <article class="mds-project">
+                        <div class="mds-project__shot"><img src="assets/images/projetos/pf-cdc-campinas-800.webp" srcset="assets/images/projetos/pf-cdc-campinas-800.webp 800w, assets/images/projetos/pf-cdc-campinas-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 380px" width="800" height="500" alt="Primeira dobra do site CDC Campinas" loading="lazy" decoding="async"></div>
+                        <div class="mds-project__meta">
+                            <span class="mds-label" data-i18n="p.cdc.label">Landing page de evento</span>
+                            <h3 class="mds-project__name">CDC Campinas</h3>
+                            <p class="mds-project__kind" data-i18n="p.cdc.kind">Evento para profissionais da saúde, com lotes de ingresso.</p>
                         </div>
+                        <div class="mds-project__actions"><a class="mds-btn mds-btn--secondary mds-btn--sm" href="https://goncalvespriscila.com.br/cdc-campinas/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao vivo</span><span class="sr-only"> — CDC Campinas</span></a></div>
                     </article>
-                    <article class="pc-slide" aria-roledescription="slide" aria-label="5 de 12: CDC Campinas">
-                        <div class="pc-media"><img src="assets/images/projetos/pf-cdc-campinas-1600.webp" srcset="assets/images/projetos/pf-cdc-campinas-800.webp 800w, assets/images/projetos/pf-cdc-campinas-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="762" alt="Primeira dobra do site CDC Campinas" loading="lazy" decoding="async" draggable="false"></div>
-                        <div class="pc-cap">
-                            <a class="pc-cta" href="https://goncalvespriscila.com.br/cdc-campinas/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — CDC Campinas</span></a>
-                            <p class="pc-text"><strong class="pc-name">CDC Campinas</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.cdccampinas.kind">Landing page de evento para profissionais da saúde</span></p>
+                    <article class="mds-project">
+                        <div class="mds-project__shot"><img src="assets/images/projetos/pf-trekking-800.webp" srcset="assets/images/projetos/pf-trekking-800.webp 800w, assets/images/projetos/pf-trekking-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 380px" width="800" height="500" alt="Primeira dobra do site Trekking Capital" loading="lazy" decoding="async"></div>
+                        <div class="mds-project__meta">
+                            <span class="mds-label" data-i18n="p.trekking.label">Site institucional</span>
+                            <h3 class="mds-project__name">Trekking Capital</h3>
+                            <p class="mds-project__kind" data-i18n="p.trekking.kind">Assessoria em investimentos imobiliários.</p>
                         </div>
+                        <div class="mds-project__actions"><a class="mds-btn mds-btn--secondary mds-btn--sm" href="https://trekkingcapital.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao vivo</span><span class="sr-only"> — Trekking Capital</span></a></div>
                     </article>
-                    <article class="pc-slide" aria-roledescription="slide" aria-label="6 de 12: Trekking Capital">
-                        <div class="pc-media"><img src="assets/images/projetos/pf-trekking-1600.webp" srcset="assets/images/projetos/pf-trekking-800.webp 800w, assets/images/projetos/pf-trekking-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="708" alt="Primeira dobra do site Trekking Capital" loading="lazy" decoding="async" draggable="false"></div>
-                        <div class="pc-cap">
-                            <a class="pc-cta" href="https://trekkingcapital.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Trekking Capital</span></a>
-                            <p class="pc-text"><strong class="pc-name">Trekking Capital</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.trekkingcapital.kind">Site para assessoria em investimentos imobiliários</span></p>
+                    <article class="mds-project">
+                        <div class="mds-project__shot"><img src="assets/images/projetos/pf-ap-solucoes-800.webp" srcset="assets/images/projetos/pf-ap-solucoes-800.webp 800w, assets/images/projetos/pf-ap-solucoes-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 380px" width="800" height="500" alt="Primeira dobra do site AP Soluções Humanas" loading="lazy" decoding="async"></div>
+                        <div class="mds-project__meta">
+                            <span class="mds-label" data-i18n="p.ap.label">Site institucional</span>
+                            <h3 class="mds-project__name">AP Soluções Humanas</h3>
+                            <p class="mds-project__kind" data-i18n="p.ap.kind">Consultoria de RH, com formulário integrado ao n8n.</p>
                         </div>
+                        <div class="mds-project__actions"><a class="mds-btn mds-btn--secondary mds-btn--sm" href="https://apsolucoeshumanas.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao vivo</span><span class="sr-only"> — AP Soluções Humanas</span></a></div>
                     </article>
-                    <article class="pc-slide" aria-roledescription="slide" aria-label="7 de 12: Ackermann Advogados">
-                        <div class="pc-media"><img src="assets/images/projetos/pf-ackermann-1600.webp" srcset="assets/images/projetos/pf-ackermann-800.webp 800w, assets/images/projetos/pf-ackermann-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="765" alt="Primeira dobra do site Ackermann Advogados" loading="lazy" decoding="async" draggable="false"></div>
-                        <div class="pc-cap">
-                            <a class="pc-cta" href="https://ackermannadv.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Ackermann Advogados</span></a>
-                            <p class="pc-text"><strong class="pc-name">Ackermann Advogados</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.ackermann.kind">Landing page para escritório jurídico</span></p>
+                    <article class="mds-project" data-extra hidden>
+                        <div class="mds-project__shot"><img src="assets/images/projetos/pf-paiola-lava-seca-800.webp" srcset="assets/images/projetos/pf-paiola-lava-seca-800.webp 800w, assets/images/projetos/pf-paiola-lava-seca-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 380px" width="800" height="500" alt="Primeira dobra do site Paiola Lava e Seca" loading="lazy" decoding="async"></div>
+                        <div class="mds-project__meta">
+                            <span class="mds-label" data-i18n="p.lavaseca.label">Landing page</span>
+                            <h3 class="mds-project__name">Paiola Lava e Seca</h3>
+                            <p class="mds-project__kind" data-i18n="p.lavaseca.kind">Captação de orçamentos para conserto de lava e seca.</p>
                         </div>
+                        <div class="mds-project__actions"><a class="mds-btn mds-btn--secondary mds-btn--sm" href="https://lavaeseca.refrigeracaopaiola.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao vivo</span><span class="sr-only"> — Paiola Lava e Seca</span></a></div>
                     </article>
-                    <article class="pc-slide" aria-roledescription="slide" aria-label="8 de 12: AP Soluções Humanas">
-                        <div class="pc-media"><img src="assets/images/projetos/pf-ap-solucoes-1600.webp" srcset="assets/images/projetos/pf-ap-solucoes-800.webp 800w, assets/images/projetos/pf-ap-solucoes-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="768" alt="Primeira dobra do site AP Soluções Humanas" loading="lazy" decoding="async" draggable="false"></div>
-                        <div class="pc-cap">
-                            <a class="pc-cta" href="https://apsolucoeshumanas.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — AP Soluções Humanas</span></a>
-                            <p class="pc-text"><strong class="pc-name">AP Soluções Humanas</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.apsolucoes.kind">Site institucional para consultoria de RH</span></p>
+                    <article class="mds-project" data-extra hidden>
+                        <div class="mds-project__shot"><img src="assets/images/projetos/pf-ackermann-800.webp" srcset="assets/images/projetos/pf-ackermann-800.webp 800w, assets/images/projetos/pf-ackermann-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 380px" width="800" height="500" alt="Primeira dobra do site Ackermann Advogados" loading="lazy" decoding="async"></div>
+                        <div class="mds-project__meta">
+                            <span class="mds-label" data-i18n="p.ackermann.label">Landing page</span>
+                            <h3 class="mds-project__name">Ackermann Advogados</h3>
+                            <p class="mds-project__kind" data-i18n="p.ackermann.kind">Landing page para escritório jurídico.</p>
                         </div>
+                        <div class="mds-project__actions"><a class="mds-btn mds-btn--secondary mds-btn--sm" href="https://ackermannadv.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao vivo</span><span class="sr-only"> — Ackermann Advogados</span></a></div>
                     </article>
-                    <article class="pc-slide" aria-roledescription="slide" aria-label="9 de 12: Tubo Forte Plásticos">
-                        <div class="pc-media"><img src="assets/images/projetos/pf-tubo-forte-1600.webp" srcset="assets/images/projetos/pf-tubo-forte-800.webp 800w, assets/images/projetos/pf-tubo-forte-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="735" alt="Primeira dobra do site Tubo Forte Plásticos" loading="lazy" decoding="async" draggable="false"></div>
-                        <div class="pc-cap">
-                            <a class="pc-cta" href="https://tuboforteplasticos.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Tubo Forte Plásticos</span></a>
-                            <p class="pc-text"><strong class="pc-name">Tubo Forte Plásticos</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.tuboforte.kind">Site institucional e catálogo B2B</span></p>
+                    <article class="mds-project" data-extra hidden>
+                        <div class="mds-project__shot"><img src="assets/images/projetos/pf-tubo-forte-800.webp" srcset="assets/images/projetos/pf-tubo-forte-800.webp 800w, assets/images/projetos/pf-tubo-forte-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 380px" width="800" height="500" alt="Primeira dobra do site Tubo Forte Plásticos" loading="lazy" decoding="async"></div>
+                        <div class="mds-project__meta">
+                            <span class="mds-label" data-i18n="p.tuboforte.label">Site institucional</span>
+                            <h3 class="mds-project__name">Tubo Forte Plásticos</h3>
+                            <p class="mds-project__kind" data-i18n="p.tuboforte.kind">Site institucional e catálogo B2B.</p>
                         </div>
+                        <div class="mds-project__actions"><a class="mds-btn mds-btn--secondary mds-btn--sm" href="https://tuboforteplasticos.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao vivo</span><span class="sr-only"> — Tubo Forte Plásticos</span></a></div>
                     </article>
-                    <article class="pc-slide" aria-roledescription="slide" aria-label="10 de 12: ClauMixx">
-                        <div class="pc-media"><img src="assets/images/projetos/pf-claumixx-1600.webp" srcset="assets/images/projetos/pf-claumixx-800.webp 800w, assets/images/projetos/pf-claumixx-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="705" alt="Primeira dobra do site ClauMixx" loading="lazy" decoding="async" draggable="false"></div>
-                        <div class="pc-cap">
-                            <a class="pc-cta" href="https://claumixx.com/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — ClauMixx</span></a>
-                            <p class="pc-text"><strong class="pc-name">ClauMixx</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.claumixx.kind">Landing page de vendas para lançamento de produto</span></p>
+                    <article class="mds-project" data-extra hidden>
+                        <div class="mds-project__shot"><img src="assets/images/projetos/pf-claumixx-800.webp" srcset="assets/images/projetos/pf-claumixx-800.webp 800w, assets/images/projetos/pf-claumixx-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 380px" width="800" height="500" alt="Primeira dobra do site ClauMixx" loading="lazy" decoding="async"></div>
+                        <div class="mds-project__meta">
+                            <span class="mds-label" data-i18n="p.claumixx.label">Landing page de vendas</span>
+                            <h3 class="mds-project__name">ClauMixx</h3>
+                            <p class="mds-project__kind" data-i18n="p.claumixx.kind">Lançamento de produto em e-commerce.</p>
                         </div>
+                        <div class="mds-project__actions"><a class="mds-btn mds-btn--secondary mds-btn--sm" href="https://claumixx.com/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao vivo</span><span class="sr-only"> — ClauMixx</span></a></div>
                     </article>
-                    <article class="pc-slide" aria-roledescription="slide" aria-label="11 de 12: Dra. Larissa Ramalho">
-                        <div class="pc-media"><img src="assets/images/projetos/pf-dra-larissa-1600.webp" srcset="assets/images/projetos/pf-dra-larissa-800.webp 800w, assets/images/projetos/pf-dra-larissa-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="732" alt="Primeira dobra do site Dra. Larissa Ramalho" loading="lazy" decoding="async" draggable="false"></div>
-                        <div class="pc-cap">
-                            <a class="pc-cta" href="https://dralarissaramalho.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Dra. Larissa Ramalho</span></a>
-                            <p class="pc-text"><strong class="pc-name">Dra. Larissa Ramalho</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.dralarissa.kind">Landing page para captação de pacientes</span></p>
+                    <article class="mds-project" data-extra hidden>
+                        <div class="mds-project__shot"><img src="assets/images/projetos/pf-dra-larissa-800.webp" srcset="assets/images/projetos/pf-dra-larissa-800.webp 800w, assets/images/projetos/pf-dra-larissa-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 380px" width="800" height="500" alt="Primeira dobra do site Dra. Larissa Ramalho" loading="lazy" decoding="async"></div>
+                        <div class="mds-project__meta">
+                            <span class="mds-label" data-i18n="p.larissa.label">Landing page</span>
+                            <h3 class="mds-project__name">Dra. Larissa Ramalho</h3>
+                            <p class="mds-project__kind" data-i18n="p.larissa.kind">Captação de pacientes para clínica.</p>
                         </div>
+                        <div class="mds-project__actions"><a class="mds-btn mds-btn--secondary mds-btn--sm" href="https://dralarissaramalho.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao vivo</span><span class="sr-only"> — Dra. Larissa Ramalho</span></a></div>
                     </article>
-                    <article class="pc-slide" aria-roledescription="slide" aria-label="12 de 12: Blog Mundo Geopolítico">
-                        <div class="pc-media"><img src="assets/images/projetos/pf-mundo-geopolitico-blog-1600.webp" srcset="assets/images/projetos/pf-mundo-geopolitico-blog-800.webp 800w, assets/images/projetos/pf-mundo-geopolitico-blog-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 56px), (max-width: 1024px) calc(100vw - 140px), 1040px" width="1600" height="729" alt="Primeira dobra do site Blog Mundo Geopolítico" loading="lazy" decoding="async" draggable="false"></div>
-                        <div class="pc-cap">
-                            <a class="pc-cta" href="https://artigos.mundogeopolitico.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao Vivo</span><span class="pc-sr"> — Blog Mundo Geopolítico</span></a>
-                            <p class="pc-text"><strong class="pc-name">Blog Mundo Geopolítico</strong><span class="pc-sep"> · </span><span class="pc-kind" data-i18n="pc.blogmundogeo.kind">Blog com arquitetura de conteúdo para SEO</span></p>
+                    <article class="mds-project" data-extra hidden>
+                        <div class="mds-project__shot"><img src="assets/images/projetos/pf-mundo-geopolitico-blog-800.webp" srcset="assets/images/projetos/pf-mundo-geopolitico-blog-800.webp 800w, assets/images/projetos/pf-mundo-geopolitico-blog-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 380px" width="800" height="500" alt="Primeira dobra do site Blog Mundo Geopolítico" loading="lazy" decoding="async"></div>
+                        <div class="mds-project__meta">
+                            <span class="mds-label" data-i18n="p.mundogeo.label">Blog</span>
+                            <h3 class="mds-project__name">Blog Mundo Geopolítico</h3>
+                            <p class="mds-project__kind" data-i18n="p.mundogeo.kind">Arquitetura de conteúdo para SEO.</p>
                         </div>
+                        <div class="mds-project__actions"><a class="mds-btn mds-btn--secondary mds-btn--sm" href="https://artigos.mundogeopolitico.com.br/" target="_blank" rel="noopener"><span data-i18n="btn.live">Ver ao vivo</span><span class="sr-only"> — Blog Mundo Geopolítico</span></a></div>
                     </article>
-                    </div>
-                    <button class="pc-side pc-prev" type="button" aria-label="Projeto anterior"><span class="pc-chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></span></button>
-                    <button class="pc-side pc-next" type="button" aria-label="Próximo projeto"><span class="pc-chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span></button>
-                </div>
-                <div class="pc-controls">
-                    <div class="pc-dots"><button class="pc-dot" type="button" aria-label="Ver projeto 1: Ackermann Advogados · Leilões de Imóveis"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 2: Cícero Neri"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 3: Refrigeração Paiola"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 4: Paiola Lava e Seca"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 5: CDC Campinas"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 6: Trekking Capital"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 7: Ackermann Advogados"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 8: AP Soluções Humanas"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 9: Tubo Forte Plásticos"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 10: ClauMixx"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 11: Dra. Larissa Ramalho"><span></span></button><button class="pc-dot" type="button" aria-label="Ver projeto 12: Blog Mundo Geopolítico"><span></span></button></div>
-                    <button class="pc-play" type="button" aria-label="Pausar apresentação">
-                        <svg class="ico-pause" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
-                        <svg class="ico-play" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg>
-                    </button>
-                </div>
-                <p class="pc-live pc-sr" aria-live="polite"></p>
             </div>
-
-            <div class="container">
-                <h3 class="projects-subtitle" data-i18n="projects.automation">Automações & IA</h3>
-                <div class="project-grid">
-
-                    <!-- Projeto 10: Agente BNI 1ª Versão -->
-                    <div class="project-card">
-                        <img src="assets/images/Agente-BNI-Atendimento.jpg" alt="Preview da automação Agente de Atendimento BNI" loading="lazy">
-                        <div class="card-content">
-                            <h3>Agente de Atendimento BNI - 1ª Versão</h3>
-                            <h4 data-i18n="project.bni1.subtitle">BNI Nebbiolo Indaiatuba - Automação de Atendimento via WhatsApp</h4>
-                            <p data-i18n="project.bni1.desc">Desenvolvimento de um agente de atendimento virtual para o BNI, utilizando n8n para orquestrar fluxos de trabalho e integrar com a API do WhatsApp (Evolution API). O agente responde perguntas frequentes sobre membros do BNI, com todos os dados armazenados no Supabase/PostgreSQL.</p>
-                            <div class="tech-tags">
-                                <span>n8n</span><span>Evolution API</span><span>PostgreSQL</span><span>Supabase</span><span>OpenAI API</span><span>AI Agent</span>
-                            </div>
-                            <div class="card-buttons"></div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 11: Agente BNI 2ª Versão -->
-                    <div class="project-card">
-                        <img src="assets/images/Agente-BNI2-Atendimento.jpg" alt="Preview da automação Agente de Atendimento BNI 2ª Versão" loading="lazy">
-                        <div class="card-content">
-                            <h3>Agente de Atendimento BNI - 2ª Versão</h3>
-                            <h4 data-i18n="project.bni2.subtitle">BNI Nebbiolo Indaiatuba - Automação Avançada via WhatsApp</h4>
-                            <p data-i18n="project.bni2.desc">Evolução do agente de atendimento BNI com melhorias significativas na compreensão e resposta às consultas. Integração com Google Docs para acesso direto às informações dos membros, prompt refinado para reduzir alucinações e aumentar precisão, com orquestração via n8n.</p>
-                            <div class="tech-tags">
-                                <span>n8n</span><span>OpenAI API</span><span>Evolution API</span><span>PostgreSQL</span><span>Supabase</span><span>AI Agent</span>
-                            </div>
-                            <div class="card-buttons"></div>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="projects-more">
+                <button type="button" class="mds-btn mds-btn--secondary" id="projects-more" aria-controls="projects-grid" aria-expanded="false" data-i18n="projects.more">Ver os 12 projetos</button>
             </div>
         </section>
 
-        <!-- SEÇÃO SOBRE MIM -->
-        <section id="about">
-            <div class="container about-container">
-                <div class="about-image">
-                    <img src="assets/images/matheus-dias-de-souza.webp" width="800" height="1000" alt="Foto de Matheus Dias de Souza" loading="lazy">
-                </div>
-                <div class="about-text">
-                    <h2 data-i18n="about.title">Sobre mim</h2>
-                    <p data-i18n="about.p1">Sou o Matheus, desenvolvedor full-stack. Construo aplicações web, sites e automações com IA, do banco de dados ao deploy.</p>
-                    <p data-i18n="about.p2">Meu maior projeto até agora é o Sistema ID22. Transformei a planilha que uma agência digital usava para controlar clientes e domínios em uma plataforma em Next.js e Supabase que monitora 28 sites e envia alertas pelo WhatsApp. Na mesma agência, entreguei 25 sites, landing pages e e-commerces, além de agentes de IA que atendem leads 24 horas por dia.</p>
-                    <p data-i18n="about.p3">Cheguei à tecnologia por um caminho pouco comum. Sou formado em Direito, e uma temporada em Londres me fez perceber que eu queria construir coisas, e não só dar parecer sobre elas. De volta ao Brasil, comecei pelo e-commerce da família, criando landing pages, automações e campanhas com resultados que eu conseguia medir.</p>
-                    <p data-i18n="about.p4">Hoje moro em Dublin e estou aberto a vagas full-stack e de automação, remotas ou presenciais. Gosto de código limpo, interfaces simples e soluções diretas. Fora do trabalho, corro maratonas.</p>
-                </div>
+        <!-- AUTOMAÇÕES E IA -->
+        <section class="wrap section" aria-labelledby="ia-titulo">
+            <div class="section-head">
+                <span class="mds-label" data-i18n="ai.eyebrow">// automações e ia</span>
+                <h2 class="h2" id="ia-titulo" data-i18n="ai.title">Agentes que atendem 24 horas</h2>
+            </div>
+            <div class="ai-grid">
+                <article class="ai-card">
+                    <span class="mds-label">BNI Nebbiolo Indaiatuba · v1</span>
+                    <h3 data-i18n="ai.v1.title">Agente de atendimento no WhatsApp</h3>
+                    <p data-i18n="ai.v1.text">Responde perguntas frequentes sobre os membros do BNI. Os fluxos rodam no n8n, a conversa passa pela Evolution API e os dados ficam no Supabase.</p>
+                    <ul class="mds-tags"><li class="mds-tag mds-tag--active">n8n</li><li class="mds-tag">Evolution API</li><li class="mds-tag">Supabase</li><li class="mds-tag">OpenAI API</li></ul>
+                </article>
+                <article class="ai-card">
+                    <span class="mds-label">BNI Nebbiolo Indaiatuba · v2</span>
+                    <h3 data-i18n="ai.v2.title">Menos alucinação, mais precisão</h3>
+                    <p data-i18n="ai.v2.text">A segunda versão lê os dados direto do Google Docs e usa um prompt refinado para errar menos. A orquestração continua no n8n.</p>
+                    <ul class="mds-tags"><li class="mds-tag mds-tag--active">n8n</li><li class="mds-tag">OpenAI API</li><li class="mds-tag">Google Docs</li><li class="mds-tag">PostgreSQL</li></ul>
+                </article>
             </div>
         </section>
 
-        <!-- SEÇÃO DE CONTATO -->
-        <section id="contact">
-            <div class="container contact-container">
-                <h2 data-i18n="contact.title">Precisa de ajuda? Vamos conversar</h2>
-                <p data-i18n="contact.p1">Estou sempre aberto a novas oportunidades e colaborações, e posso ajudar através de projetos práticos já implementados que unem a eficiência da automação com a excelência do desenvolvimento web. Implemento agentes de IA que utilizam o N8N para orquestrar fluxos de trabalho e responder ao WhatsApp de forma inteligente, gerenciando a triagem inicial de leads e fornecendo respostas rápidas.</p>
-                <p data-i18n="contact.p2">No front-end, crio sites e landing pages de alta conversão usando Elementor, complementando-os com a configuração e gestão de envio de Email Marketing e pela criação de blogs estratégicos que atraem tráfego qualificado. Em e-commerce, administro plataformas como Loja Integrada e Tray Commerce, garantindo a estabilidade e performance da loja, além de cuidar da administração de hospedagem e do desenvolvimento de scripts específicos para otimização de tarefas e integração de sistemas.</p>
-                <p data-i18n="contact.p3">Para completar, desenvolvo e-books e tutoriais de suporte técnico que não apenas capacitam clientes e equipes, mas reduzem a demanda por suporte recorrente, melhorando a satisfação e a eficiência operacional. Eu transformo suas ferramentas em um ecossistema de crescimento e minha proposta é clara: usar tecnologia de ponta para automatizar o que é repetitivo e focar no desenvolvimento do que é estratégico.</p>
-                <div class="contact-links">
-                    <a href="mailto:matheusdias.dev96@gmail.com" class="contact-link">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>matheusdias.dev96@gmail.com</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/matheusdiasdesouza/" target="_blank" class="contact-link">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/Matdev96" target="_blank" class="contact-link">
-                        <i class="fa-brands fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                </div>
+        <!-- SOBRE MIM -->
+        <section id="sobre" class="wrap section about" aria-labelledby="sobre-titulo">
+            <div class="about__side">
+                <span class="mds-label" data-i18n="about.eyebrow">// sobre mim</span>
+                <h2 class="h2" id="sobre-titulo" data-i18n="about.title">Do Direito ao deploy</h2>
+                <dl class="facts">
+                    <dt class="mds-label" data-i18n="about.f1">Formação</dt><dd data-i18n="about.f1v">Análise e Desenvolvimento de Sistemas · Direito</dd>
+                    <dt class="mds-label" data-i18n="about.f2">Base</dt><dd data-i18n="about.f2v">Dublin, Irlanda</dd>
+                    <dt class="mds-label" data-i18n="about.f3">Fora do código</dt><dd data-i18n="about.f3v">Maratonas</dd>
+                </dl>
+            </div>
+            <div class="about__text">
+                <p data-i18n="about.p1">Sou o Matheus, desenvolvedor full-stack. Construo aplicações web, sites e automações com IA, do banco de dados ao deploy.</p>
+                <p data-i18n="about.p2">Meu maior projeto até agora é o Sistema ID22. Transformei a planilha que uma agência digital usava para controlar clientes e domínios em uma plataforma em Next.js e Supabase que monitora 28 sites e envia alertas pelo WhatsApp. Na mesma agência, entreguei 25 sites, landing pages e e-commerces, além de agentes de IA que atendem leads 24 horas por dia.</p>
+                <p data-i18n="about.p3">Cheguei à tecnologia por um caminho pouco comum. Sou formado em Direito, e uma temporada em Londres me fez perceber que eu queria construir coisas, e não só dar parecer sobre elas. De volta ao Brasil, comecei pelo e-commerce da família, criando landing pages, automações e campanhas com resultados que eu conseguia medir.</p>
+                <p data-i18n="about.p4">Hoje moro em Dublin e estou aberto a vagas full-stack e de automação, remotas ou presenciais. Gosto de código limpo, interfaces simples e soluções diretas. Fora do trabalho, corro maratonas.</p>
             </div>
         </section>
 
+        <!-- CONTATO -->
+        <section id="contato" class="wrap section" aria-labelledby="contato-titulo">
+            <div class="contact">
+                <span class="mds-label" data-i18n="contact.eyebrow">// contato</span>
+                <h2 class="contact__title" id="contato-titulo" data-i18n="contact.title">Vamos construir algo juntos.</h2>
+                <div class="contact__mail">
+                    <a href="mailto:matheusdias.dev96@gmail.com">matheusdias.dev96@gmail.com</a>
+                    <button type="button" class="copy-btn" id="copy-email" data-email="matheusdias.dev96@gmail.com" data-i18n="contact.copy">Copiar</button>
+                </div>
+                <div class="contact__actions">
+                    <a class="mds-btn mds-btn--primary" href="https://www.linkedin.com/in/matheusdiasdesouza" target="_blank" rel="noopener">LinkedIn</a>
+                    <a class="mds-btn mds-btn--secondary" href="https://github.com/Matdev96" target="_blank" rel="noopener">GitHub</a>
+                    <a class="mds-btn mds-btn--secondary" href="CV — Matheus Dias de Souza.pdf" download data-i18n="cta.cv">Baixar CV</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- RODAPÉ -->
-    <footer>
-        <div class="container">
-            <a href="#" class="logo-footer">&lt;MDS/&gt;</a>
-            <p data-i18n="footer.rights">© 2026 Matheus Dias de Souza. Todos os direitos reservados.</p>
-        </div>
+    <footer class="wrap site-footer">
+        <a href="#topo" class="mds-wordmark"><b>&lt;</b>MDS<b>/&gt;</b></a>
+        <span>© 2026 Matheus Dias de Souza</span>
+        <span class="mds-label">HTML · CSS · JS · GitHub Pages</span>
     </footer>
-
 </body>
 </html>

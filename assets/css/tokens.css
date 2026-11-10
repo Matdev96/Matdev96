@@ -1,0 +1,49 @@
+/* MDS Portfólio — tokens do design system (tema Bordô).
+   Fonte: design system "MDS Portfólio". Não use hex fora deste arquivo. */
+:root {
+  /* Cor */
+  --surface: #2c0d10;
+  --surface-raised: #3b161a;
+  --surface-sunken: #220a0c;
+  --line: #5c2c32;
+  --line-strong: #a06a70;
+  --ink: #f7ece8;
+  --ink-muted: #cfaeab;
+  --accent: #a8e6cf;
+  --accent-soft: #203a31;
+  --on-accent: #2c0d10;
+  --vinho: #7a2a35;
+  --on-vinho: #f7ece8;
+  --signal-ok: #8fe3b0;
+  --focus: var(--accent);
+  --link: var(--accent);
+  --shadow-card: 0 18px 40px rgba(10, 2, 3, 0.45);
+
+  /* Espaço */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+
+  /* Raio */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* Layout */
+  --content-max: 1180px;
+  --text-max: 65ch;
+
+  /* Tipografia */
+  --font-display: "Bricolage Grotesque", "Instrument Sans", system-ui, sans-serif;
+  --font-sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  color-scheme: dark;
+}
